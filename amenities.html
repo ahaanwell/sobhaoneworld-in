@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Character Encoding -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+
+    <title>Sobha One World Amenities | 55+ Premium Features, Clubhouse & Sports Facilities</title>
+
+    <meta name="description"
+        content="Discover Sobha One World amenities with 55+ premium lifestyle features including clubhouse, swimming pool, sports courts, kids play areas, green spaces, and co-working zones in Hoskote, East Bangalore.">
+
+    <meta name="keywords"
+        content="Sobha One World amenities, Sobha One World clubhouse, Sobha One World sports facilities, Sobha One World Bangalore amenities, Sobha One World lifestyle features, Sobha One World Hoskote amenities">
+
+    <meta name="author" content="Sobha One World">
+    <meta name="robots" content="index, follow">
+
+    <link rel="canonical" href="https://www.sobhaoneworlds.in/amenities/">
+
+    <link rel="icon" type="image/png" href="/images/favicon.ico">
+    <link rel="apple-touch-icon" href="/images/favicon.ico">
+
+    <meta property="og:site_name" content="Sobha One World">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Sobha One World Amenities | Clubhouse, Sports & Lifestyle Features">
+    <meta property="og:description"
+        content="Explore world-class amenities at Sobha One World including clubhouse, fitness zones, landscaped gardens, and modern lifestyle facilities in East Bangalore.">
+    <meta property="og:url" content="https://www.sobhaoneworlds.in/amenities/">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Sobha One World Amenities | Luxury Living Features">
+    <meta name="twitter:description"
+        content="Premium amenities at Sobha One World include clubhouse, sports courts, pools, parks, and lifestyle spaces for modern living in Hoskote.">
+
+    <!-- Fonts -->
+    <link rel="preload" href="/css/fonts/rubik.woff2" as="font" type="font/woff2" crossorigin>
+
+    <!-- CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Custom Styles -->
+    <style>
+        .text-shadow {
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        @keyframes popup {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
+
+        .popup-animation {
+            animation: popup 1.5s ease-in-out infinite;
+        }
+    </style>
+
+    <!-- Redirect (non-www to www) -->
+    <script>
+        if (location.hostname === "sobhaoneworlds.in") {
+            location.href = "https://www.sobhaoneworlds.in" + location.pathname + location.search;
+        }
+    </script>
+
+</head>
+
+<body>
+    <nav class="sticky top-0 bg-white z-50 shadow-sm" aria-label="Main Navigation">
+        <div class="flex justify-between items-center w-[95%] mx-auto py-1">
+
+            <a href="/">
+                <img class="w-[40px]" src="./images/logo.webp" alt="Logo">
+            </a>
+
+            <ul class="hidden lg:flex items-center text-[15px] font-medium">
+
+                <li><a class="nav-not-active" href="/">Home</a></li>
+                <li><a class="nav-not-active" href="/price.html">Price</a></li>
+                <li><a class="nav-not-active" href="/floor-plans.html">Floor Plans</a></li>
+                <li><a class="nav-not-active" href="/master-plan.html">Master Plan</a></li>
+                <li><a class="nav-not-active" href="/location.html">Location</a></li>
+                <li><a class="nav-active" href="/amenities.html">Amenities</a></li>
+                <li><a class="nav-not-active" href="#gallery">Gallery</a></li>
+                <li class="nav-not-active" onclick="openModel()" class="cursor-pointer">Brochure</li>
+
+                <li class="px-4">
+                    <a href="https://wa.me/+918317452005?text=Hi!%20I%27m%20Interested%20In%20Sobha%20One%20World%20Please%20Share%20Details."
+                        class="bg-gradient-to-r from-yellow-500 to-yellow-400 text-white px-4 py-2 rounded-full flex items-center gap-2">
+                        <i class="fa-brands fa-whatsapp"></i> +918317452005
+                    </a>
+                </li>
+
+            </ul>
+
+            <button onclick="toggleMenu()" class="lg:hidden text-2xl">
+                <i class="fa fa-bars"></i>
+            </button>
+
+        </div>
+    </nav>
+
+    <div id="menu" class="fixed top-0 right-[-100%] w-[80%] h-full bg-white z-50 shadow-lg transition-all duration-300">
+
+        <div class="flex justify-between items-center p-4 border-b">
+            <span class="font-semibold">Menu</span>
+            <button onclick="toggleMenu()"><i class="fa fa-times text-xl"></i></button>
+        </div>
+
+        <ul class="flex flex-col p-5 gap-4 text-lg">
+
+            <li><a href="/" onclick="toggleMenu()">Home</a></li>
+            <li><a href="/price.html" onclick="toggleMenu()">Price</a></li>
+            <li><a href="/sitefloorplan.html" onclick="toggleMenu()">Site & Floor Plan</a></li>
+            <li><a href="/masterplan.html" onclick="toggleMenu()">Master Plan</a></li>
+            <li><a href="/location.html" onclick="toggleMenu()">Location</a></li>
+            <li><a href="/amenities.html" onclick="toggleMenu()" class="nav-active w-full">Amenities</a></li>
+            <li><a href="#gallery" onclick="toggleMenu()">Gallery</a></li>
+            <li onclick="openModel()">Brochure</li>
+
+            <li>
+                <a href="https://wa.me/+918317452005?text=Hi!%20I%27m%20Interested%20In%20Sobha%20One%20World%20Please%20Share%20Details."
+                    class="bg-yellow-500 text-white px-4 py-2 rounded-full text-center block">
+                    <i class="fa-brands fa-whatsapp"></i> +918317452005
+                </a>
+            </li>
+
+        </ul>
+    </div>
+    <!-- ================================ -->
+    <section class="pageHeader lg:h-[50vh] h-[30vh] flex justify-center items-center">
+        <h2 class="text-3xl font-bold text-white w-full text-center p-4">Amenities</h2>
+    </section>
+
+    <section class="w-full max-w-5xl mx-auto px-4 py-8">
+        <div class="mt-6 text-gray-800 leading-relaxed">
+
+            <h1 class="text-2xl font-bold mb-4 text-center">Sobha One World Amenities</h1>
+            <div class="flex justify-center items-center gap-4 mb-4">
+                <button onclick="openModel('Download Brochure')"
+                    class="border-2 border-[#ca9c20] flex justify-center items-center gap-2 font-semibold cursor-pointer text-gray-800 px-5 py-2 rounded flex items-center gap-2">
+                    <i class="fa fa-download mt-1"></i> Brochure
+                </button>
+                <button onclick="openModel('Download Cost Sheets')"
+                    class="border-2 border-[#ca9c20] flex justify-center items-center gap-2 font-semibold cursor-pointer text-gray-800 px-5 py-2 rounded flex items-center gap-2">
+                    <i class="fas fa-money mt-1"></i> Cost Sheets
+                </button>
+            </div>
+            <p class="mb-4">
+                <a href="https://www.sobhaoneworlds.in/"><b>Sobha One World</b></a> features an impressive collection of <b>55+ premium lifestyle amenities</b> thoughtfully
+                distributed across a beautifully planned <b>48-acre</b> phase. Residents can enjoy a wide range of facilities
+                including a grand clubhouse, multiple swimming pools, sports courts, landscaped gardens, and dedicated
+                organic farming spaces. The development also integrates a retail plaza and modern co-working zones along
+                Old Madras Road, making everyday living convenient without needing to step outside the township. This
+                makes it one of the most sought-after residential options in <a href="https://www.sobhaoneworlds.in/hoskote.html"><b>Hoskote</b></a>.
+            </p>
+            <p class="mb-4">
+                The project consists of <b>18 high-rise residential towers</b> designed with three basement parking levels, a
+                ground floor, and 53 upper floors, accommodating a total of <b>5,406 apartments</b>. Homebuyers can choose from
+                1, 2, 3, and 4 BHK configurations, with apartment sizes ranging from approximately 740 sq. ft. to 2,500
+                sq. ft.. With a strong focus on comfort, recreation, and safety, Sobha One World creates a well-balanced
+                living environment that supports both active and peaceful lifestyles for its residents.
+            </p>
+
+            <ul class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 lg:gap-4 my-6"
+                aria-label="Sobha One World">
+                <li
+                    class="flex flex-col items-center justify-between w-full h-[150px] lg:h-[180px] shadow-[0_4px_10px_rgba(0,0,0,0.15)] p-3 rounded-xl hover:border hover:border-gray-300 hover:shadow-md transition-all duration-300 bg-white">
+                    <div class="w-full flex-1 flex items-center justify-center p-3 h-[60%]"><img src="./images/gym.svg"
+                            alt="Gymnasium" class="w-full h-[90%] object-contain" loading="lazy"></div>
+                    <p class="text-center text-md text-gray-700 font-medium leading-tight pb-1">Gymnasium</p>
+                </li>
+                <li
+                    class="flex flex-col items-center justify-between w-full h-[150px] lg:h-[180px] shadow-[0_4px_10px_rgba(0,0,0,0.15)] p-3 rounded-xl hover:border hover:border-gray-300 hover:shadow-md transition-all duration-300 bg-white">
+                    <div class="w-full flex-1 flex items-center justify-center p-3 h-[60%]"><img src="./images/swm.svg"
+                            alt="Swimming Pool" class="w-full h-[90%] object-contain" loading="lazy"></div>
+                    <p class="text-center text-md text-gray-700 font-medium leading-tight pb-1">Swimming Pool</p>
+                </li>
+                <li
+                    class="flex flex-col items-center justify-between w-full h-[150px] lg:h-[180px] shadow-[0_4px_10px_rgba(0,0,0,0.15)] p-3 rounded-xl hover:border hover:border-gray-300 hover:shadow-md transition-all duration-300 bg-white">
+                    <div class="w-full flex-1 flex items-center justify-center p-3 h-[60%]"><img src="./images/yoga.svg"
+                            alt="Yoga Pavilion" class="w-full h-[90%] object-contain" loading="lazy"></div>
+                    <p class="text-center text-md text-gray-700 font-medium leading-tight pb-1">Yoga Pavilion</p>
+                </li>
+                <li
+                    class="flex flex-col items-center justify-between w-full h-[150px] lg:h-[180px] shadow-[0_4px_10px_rgba(0,0,0,0.15)] p-3 rounded-xl hover:border hover:border-gray-300 hover:shadow-md transition-all duration-300 bg-white">
+                    <div class="w-full flex-1 flex items-center justify-center p-3 h-[60%]"><img
+                            src="./images/videos.svg" alt="Video Door Phone" class="w-full h-[90%] object-contain"
+                            loading="lazy"></div>
+                    <p class="text-center text-md text-gray-700 font-medium leading-tight pb-1">Video Door Phone</p>
+                </li>
+                <li
+                    class="flex flex-col items-center justify-between w-full h-[150px] lg:h-[180px] shadow-[0_4px_10px_rgba(0,0,0,0.15)] p-3 rounded-xl hover:border hover:border-gray-300 hover:shadow-md transition-all duration-300 bg-white">
+                    <div class="w-full flex-1 flex items-center justify-center p-3 h-[60%]"><img src="./images/kids.svg"
+                            alt="Kids Activity Zone" class="w-full h-[90%] object-contain" loading="lazy"></div>
+                    <p class="text-center text-md text-gray-700 font-medium leading-tight pb-1">Kids Activity Zone</p>
+                </li>
+                <li
+                    class="flex flex-col items-center justify-between w-full h-[150px] lg:h-[180px] shadow-[0_4px_10px_rgba(0,0,0,0.15)] p-3 rounded-xl hover:border hover:border-gray-300 hover:shadow-md transition-all duration-300 bg-white">
+                    <div class="w-full flex-1 flex items-center justify-center p-3 h-[60%]"><img src="./images/mine.svg"
+                            alt="Mini Theater" class="w-full h-[90%] object-contain" loading="lazy"></div>
+                    <p class="text-center text-md text-gray-700 font-medium leading-tight pb-1">Mini Theater</p>
+                </li>
+                <li
+                    class="flex flex-col items-center justify-between w-full h-[150px] lg:h-[180px] shadow-[0_4px_10px_rgba(0,0,0,0.15)] p-3 rounded-xl hover:border hover:border-gray-300 hover:shadow-md transition-all duration-300 bg-white">
+                    <div class="w-full flex-1 flex items-center justify-center p-3 h-[60%]"><img
+                            src="./images/tennis.svg" alt="Aerobics Room" class="w-full h-[90%] object-contain"
+                            loading="lazy"></div>
+                    <p class="text-center text-md text-gray-700 font-medium leading-tight pb-1">Aerobics Room</p>
+                </li>
+                <li
+                    class="flex flex-col items-center justify-between w-full h-[150px] lg:h-[180px] shadow-[0_4px_10px_rgba(0,0,0,0.15)] p-3 rounded-xl hover:border hover:border-gray-300 hover:shadow-md transition-all duration-300 bg-white">
+                    <div class="w-full flex-1 flex items-center justify-center p-3 h-[60%]"><img
+                            src="./images/chess.svg" alt="Indoor Games Room" class="w-full h-[90%] object-contain"
+                            loading="lazy"></div>
+                    <p class="text-center text-md text-gray-700 font-medium leading-tight pb-1">Indoor Games Room</p>
+                </li>
+                <li
+                    class="flex flex-col items-center justify-between w-full h-[150px] lg:h-[180px] shadow-[0_4px_10px_rgba(0,0,0,0.15)] p-3 rounded-xl hover:border hover:border-gray-300 hover:shadow-md transition-all duration-300 bg-white">
+                    <div class="w-full flex-1 flex items-center justify-center p-3 h-[60%]"><img
+                            src="./images/disco-ball.svg" alt="Club House" class="w-full h-[90%] object-contain"
+                            loading="lazy"></div>
+                    <p class="text-center text-md text-gray-700 font-medium leading-tight pb-1">Club House</p>
+                </li>
+                <li
+                    class="flex flex-col items-center justify-between w-full h-[150px] lg:h-[180px] shadow-[0_4px_10px_rgba(0,0,0,0.15)] p-3 rounded-xl hover:border hover:border-gray-300 hover:shadow-md transition-all duration-300 bg-white">
+                    <div class="w-full flex-1 flex items-center justify-center p-3 h-[60%]"><img
+                            src="./images/dance.svg" alt="Dance/Music" class="w-full h-[90%] object-contain"
+                            loading="lazy"></div>
+                    <p class="text-center text-md text-gray-700 font-medium leading-tight pb-1">Dance/Music</p>
+                </li>
+                <li
+                    class="flex flex-col items-center justify-between w-full h-[150px] lg:h-[180px] shadow-[0_4px_10px_rgba(0,0,0,0.15)] p-3 rounded-xl hover:border hover:border-gray-300 hover:shadow-md transition-all duration-300 bg-white">
+                    <div class="w-full flex-1 flex items-center justify-center p-3 h-[60%]"><img src="./images/cctv.svg"
+                            alt="24/7 CCTV Monitoring" class="w-full h-[90%] object-contain" loading="lazy"></div>
+                    <p class="text-center text-md text-gray-700 font-medium leading-tight pb-1">24/7 CCTV Monitoring</p>
+                </li>
+                <li
+                    class="flex flex-col items-center justify-between w-full h-[150px] lg:h-[180px] shadow-[0_4px_10px_rgba(0,0,0,0.15)] p-3 rounded-xl hover:border hover:border-gray-300 hover:shadow-md transition-all duration-300 bg-white">
+                    <div class="w-full flex-1 flex items-center justify-center p-3 h-[60%]"><img src="./images/jog.svg"
+                            alt="Jogging Track" class="w-full h-[90%] object-contain" loading="lazy"></div>
+                    <p class="text-center text-md text-gray-700 font-medium leading-tight pb-1">Jogging Track</p>
+                </li>
+            </ul>
+
+            <div class="space-y-6">
+
+                <div>
+                    <h2 class="text-2xl font-bold mb-2">Recreational Zone</h2>
+                    <p class="text-gray-700">
+                        The <b>recreational</b> zone at Sobha One World is thoughtfully designed to offer residents a relaxing
+                        and enjoyable environment where they can unwind and spend meaningful time with family and
+                        friends. This zone blends leisure with wellness, creating a perfect escape within the township
+                        itself.
+                    </p>
+                    <p class="text-gray-700 mt-2">
+                        Residents can engage in a variety of indoor and outdoor activities such as board games, snooker,
+                        and a professionally designed squash court. For those seeking relaxation and rejuvenation,
+                        facilities like a spa, sauna, jacuzzi, and dedicated meditation pads provide a peaceful retreat.
+                        The area also features a beautifully designed clubhouse, a bio pond that enhances the natural
+                        ambiance, and a bonfire court for social gatherings and evening relaxation. In addition,
+                        multiple outdoor activity courts are available for recreational sports and casual play.
+                    </p>
+                </div>
+
+                <div>
+                    <h2 class="text-2xl font-bold mb-2">Sports & Fitness</h2>
+                    <p class="text-gray-700">
+                        The project places a strong emphasis on an active and healthy lifestyle by offering a wide range
+                        of sports and fitness amenities. Tree-lined jogging and walking tracks run across the
+                        development, encouraging daily exercise in a refreshing green environment.
+                    </p>
+                    <p class="text-gray-700 mt-2">
+                        For sports enthusiasts, there are dedicated facilities such as a golf putting zone, cricket
+                        practice nets, and multi-purpose sports courts suitable for games like basketball and beach
+                        volleyball. Children and adults alike can enjoy open playgrounds and cycling paths, while
+                        outdoor exercise decks and a skating rink add to the variety of physical activities available.
+                        The presence of a large outdoor swimming pool further enhances the fitness experience, making it
+                        easy for residents to stay active without leaving the community.
+                    </p>
+                </div>
+
+                <div>
+                    <h2 class="text-2xl font-bold mb-2">Lifestyle Amenities</h2>
+                    <p class="text-gray-700">
+                        Sobha One World offers a vibrant lifestyle through its thoughtfully curated amenities that cater
+                        to all age groups. Residents can enjoy courts for volleyball, tennis, and futsal, along with
+                        unique features like urban farming spaces and community gardens that promote sustainable living.
+                    </p>
+                    <p class="text-gray-700 mt-2">
+                        The township also includes well-designed gathering spaces such as poolside pavilions and open
+                        seating areas where residents can socialize and relax. Premium features like an infinity-edge
+                        pool, dedicated pet park, stylish cabanas, and themed activity zones like a giant chess board
+                        and adventure park add to the luxury experience. Skate parks and children’s play zones further
+                        ensure that every member of the family has access to engaging recreational options.
+                    </p>
+                </div>
+
+                <div>
+                    <h2 class="text-2xl font-bold mb-2">Clubhouse</h2>
+                    <p class="text-gray-700">
+                        The clubhouse facilities at Sobha One World are among the highlights of the project, offering a
+                        resort-like experience within the residential community. The development features two expansive
+                        clubhouses, each spanning over 50,000 sq. ft., along with an ultra-luxury clubhouse of
+                        approximately 75,000 sq. ft. designed with a grand double-height lobby.
+                    </p>
+                    <p class="text-gray-700 mt-2">
+                        These clubhouses are equipped with a wide range of premium amenities, including rooftop BBQ
+                        areas and pavilions for social gatherings. Indoor entertainment options such as table tennis,
+                        billiards, card rooms, and carrom rooms are available for leisure activities. Additional
+                        conveniences include a supermarket, guest rooms, salon, and changing facilities.
+                    </p>
+                    <p class="text-gray-700 mt-2">
+                        Residents can also enjoy modern fitness and wellness amenities like an aerobics studio, fully
+                        equipped gym, indoor swimming pool, dance studios, spa, and relaxation areas. Banquet halls,
+                        party spaces, and a mini theatre make the clubhouse a complete lifestyle destination.
+                    </p>
+                </div>
+
+                <div>
+                    <h2 class="text-2xl font-bold mb-2">Kids’ Facilities</h2>
+                    <p class="text-gray-700">
+                        Special attention has been given to children’s development and recreation with a wide range of
+                        dedicated play areas. These include safe and engaging spaces equipped with swings, sand pits,
+                        trampolines, and interactive play equipment.
+                    </p>
+                    <p class="text-gray-700 mt-2">
+                        Adventure-based features such as rock climbing walls and mound slides encourage physical
+                        activity, while interactive floor games and informal skating areas provide fun learning
+                        experiences. Unique additions like a giant abacus help combine play with educational engagement,
+                        ensuring a well-rounded environment for kids.
+                    </p>
+                </div>
+
+                <div>
+                    <h2 class="text-2xl font-bold mb-2">Safety & Sustainability</h2>
+                    <p class="text-gray-700">
+                        Sobha One World prioritizes both safety and environmental responsibility. The entire township is
+                        secured with 24/7 trained security personnel and CCTV surveillance across all common areas,
+                        ensuring a safe and peaceful living environment.
+                    </p>
+                    <p class="text-gray-700 mt-2">
+                        The project also incorporates modern infrastructure such as spacious parking areas with EV
+                        charging points and air-filling stations. Sustainable features include rainwater harvesting
+                        systems, solar-powered lighting, and energy-efficient fixtures to reduce environmental impact.
+                    </p>
+                    <p class="text-gray-700 mt-2">
+                        Proper waste segregation systems and a sewage treatment plant are implemented to maintain
+                        cleanliness and ecological balance within the community. Vehicle-free zones and
+                        pedestrian-friendly pathways further enhance safety and promote a healthier lifestyle.
+                    </p>
+                    <p class="text-gray-700 mt-2">
+                        Residents can also enjoy community-driven experiences like outdoor movie screenings, landscaped
+                        party lawns, and interactive game pods, making the township lively and socially engaging.
+                    </p>
+                </div>
+
+                <div>
+                    <h2 class="text-2xl font-bold mb-2">Expert Review</h2>
+                    <p class="text-gray-700">
+                        Real estate professionals and early buyers have given highly positive feedback for the amenities
+                        offered at Sobha One World. The project has received an impressive rating of 4.7 out of 5, with
+                        experts highlighting its well-planned infrastructure, premium lifestyle features, and strong
+                        potential for long-term value appreciation. The combination of modern amenities, green spaces,
+                        and thoughtful design makes it one of the most attractive residential destinations in Hoskote.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="space-y-6 mt-5">
+
+            <h2 class="text-2xl font-bold">FAQs</h2>
+
+            <div>
+                <h3 class="text-xl font-semibold mb-2">
+                    1. What types of amenities are offered at Sobha One World?
+                </h3>
+                <p class="text-gray-700">
+                    Sobha One World provides a wide range of more than 55 premium lifestyle amenities designed for
+                    modern living. These include spacious clubhouses, swimming pools, sports courts, landscaped gardens,
+                    retail spaces, co-working zones, and dedicated play areas for children, creating a complete township
+                    experience for residents.
+                </p>
+            </div>
+
+            <div>
+                <h3 class="text-xl font-semibold mb-2">
+                    2. Does Sobha One World include sports and fitness facilities?
+                </h3>
+                <p class="text-gray-700">
+                    Yes, the project is well-equipped with multiple sports and fitness options to promote a healthy
+                    lifestyle. Residents have access to jogging and walking tracks, cricket practice nets, outdoor gym
+                    zones, skating rinks, cycling paths, swimming pools, and multi-purpose courts for various indoor and
+                    outdoor games.
+                </p>
+            </div>
+
+            <div>
+                <h3 class="text-xl font-semibold mb-2">
+                    3. What amenities are available for children in the project?
+                </h3>
+                <p class="text-gray-700">
+                    Sobha One World offers thoughtfully designed spaces for children’s recreation and development. These
+                    include safe play areas with swings, trampolines, sand pits, rock climbing features, interactive
+                    activity zones, and skate parks that combine fun with learning and physical activity.
+                </p>
+            </div>
+
+            <div>
+                <h3 class="text-xl font-semibold mb-2">
+                    4. How secure and environmentally friendly is Sobha One World?
+                </h3>
+                <p class="text-gray-700">
+                    The township is designed with strong safety and sustainability features. It includes round-the-clock
+                    security personnel, CCTV surveillance in common areas, and controlled entry points. Eco-friendly
+                    initiatives such as rainwater harvesting, solar-powered lighting, EV charging stations, waste
+                    management systems, and a sewage treatment plant ensure responsible and sustainable living.
+                </p>
+            </div>
+
+            <div>
+                <h3 class="text-xl font-semibold mb-2">
+                    5. What facilities are available inside the clubhouse?
+                </h3>
+                <p class="text-gray-700">
+                    Sobha One World offers two large clubhouses of over 50,000 sq. ft. each, along with an ultra-luxury
+                    clubhouse of around 75,000 sq. ft. These spaces include a fully equipped gym, indoor swimming pool,
+                    aerobics studio, spa, mini theatre, banquet and party halls, indoor games like table tennis and card
+                    rooms, as well as rooftop BBQ areas and social lounges for residents.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <footer>
+        <div class='bg-white p-4 mt-4 flex flex-col gap-3 relative border border-gray-200'>
+            <div class=' lg:px-6'>
+                <p class=' text-xs'>
+                    <span class=' font-medium'>Disclaimer</span> : Please be advised that this website is not an
+                    official site and serves solely as an informational portal managed by a RERA authorized real estate
+                    agent. It does not constitute an offer or guarantee of any services. The prices displayed on this
+                    website are subject to change without prior notice, and the availability of properties cannot be
+                    guaranteed. The images showcased on this website are for representational purposes only and may not
+                    accurately reflect the actual properties. We may share your data with Real Estate Regulatory
+                    Authority (RERA) registered Developers for further processing as necessary. Additionally, we may
+                    send updates and information to the mobile number or email address registered with us.
+                    All rights reserved. The content, design, and information on this website are protected by copyright
+                    and other intellectual property rights. Any unauthorized use or reproduction of the content may
+                    violate applicable laws.
+                    For accurate and up-to-date information regarding services, pricing, availability, and any other
+                    details, it is recommended to contact us directly through the provided contact information on this
+                    website. Thank you for visiting our website.
+                </p>
+            </div>
+            <div class=' flex justify-center border-t border-black mt-2 pt-2'>
+                <p class=' text-sm'>Developed and Marketing by <a href="https://www.mndigitalagency.com"
+                        class=" text-blue-500">
+                        M2N Digital Agency
+                    </a>
+                </p>
+            </div>
+        </div>
+    </footer>
+    <div class="fixed z-20 top-1/2 right-[-37px] " id="">
+        <button onclick="openModel()" class="bg-primary px-2 py-1 text-white rotate-[270deg] rounded-sm">
+            Enquiry Now
+        </button>
+    </div>
+    <!-- Lead Modal -->
+    <div id="modelContainer" class="fixed inset-0 bg-black/60 hidden z-50 flex justify-center items-center">
+
+        <div class="lg:w-[500px] w-[95%] bg-white relative rounded shadow-lg animate-fadeIn">
+
+            <!-- Close Button -->
+            <button id="modelRemoveBtn" class="absolute top-2 right-3 text-white bg-black/40 px-2 rounded">
+                ✕
+            </button>
+
+            <!-- Heading -->
+            <div class="bg-yellow-500 p-3">
+                <h4 id="formHeading" class="text-center text-xl lg:text-2xl font-semibold text-white">
+                    Enquire Now For More Details
+                </h4>
+            </div>
+
+            <div class="flex">
+
+                <!-- Left Side -->
+                <div class="w-[25%] hidden lg:flex flex-col gap-6 bg-gray-100 p-4">
+                    <div class="text-center">
+                        <img class="w-[50px] m-auto" src="images/telephone-call.webp">
+                        <span class="text-xs">Instant Call Back</span>
+                    </div>
+                    <div class="text-center">
+                        <img class="w-[50px] m-auto" src="images/house.webp">
+                        <span class="text-xs">Free Visit</span>
+                    </div>
+                    <div class="text-center">
+                        <img class="w-[50px] m-auto" src="images/rupees.webp">
+                        <span class="text-xs">Best Price</span>
+                    </div>
+                </div>
+
+                <!-- Form -->
+                <form onsubmit="submitBtn1(event)" class="lg:w-[75%] w-full flex flex-col p-5 gap-4">
+
+                    <input id="name_1" required class="p-2 border-b outline-none" type="text" placeholder="Name">
+
+                    <div class="flex">
+                        <select id="country_code_1" class="border-b outline-none">
+                            <option value="+91">+91(IND)</option>
+                            <option value="+971">+971(UAE)</option>
+                            <option value="+44">+44(UK)</option>
+                            <option value="+1">+1(USA)</option>
+                        </select>
+                        <input id="number_1" required class="p-2 border-b outline-none w-full" type="text"
+                            placeholder="Mobile No">
+                    </div>
+
+                    <input id="email_1" required class="p-2 border-b outline-none" type="email" placeholder="Email">
+
+                    <button id="submitBtn_1" type="submit" class="bg-yellow-500 text-white py-2 rounded shadow">
+                        Submit Now
+                    </button>
+
+                    <!-- CTA Buttons -->
+                    <div class="flex gap-3">
+                        <a href="https://wa.me/+918317452005?text=Hi!%20I%27m%20Interested%20In%20Sobha%20One%20World%20Please%20Share%20Details."
+                            target="_blank" class="w-full bg-green-500 text-white text-center py-2 rounded">
+                            WhatsApp
+                        </a>
+
+                        <a href="tel:+918317452005" class="w-full bg-yellow-500 text-white text-center py-2 rounded">
+                            Call Now
+                        </a>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="js/global.js"></script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+
+    {
+      "@type": "WebSite",
+      "@id": "https://www.sobhaoneworlds.in/#website",
+      "url": "https://www.sobhaoneworlds.in/",
+      "name": "Sobha One World"
+    },
+
+    {
+      "@type": "WebPage",
+      "@id": "https://www.sobhaoneworlds.in/amenities/#webpage",
+      "url": "https://www.sobhaoneworlds.in/amenities/",
+      "name": "Sobha One World Amenities",
+      "headline": "Sobha One World Amenities",
+      "description": "Explore Sobha One World amenities featuring 55+ premium lifestyle facilities including clubhouse, swimming pools, sports courts, kids' play zones, and landscaped green spaces in East Bangalore.",
+      "inLanguage": "en-IN",
+      "isPartOf": {
+        "@id": "https://www.sobhaoneworlds.in/#website"
+      },
+      "breadcrumb": {
+        "@id": "https://www.sobhaoneworlds.in/amenities/#breadcrumb"
+      }
+    },
+
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://www.sobhaoneworlds.in/amenities/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.sobhaoneworlds.in/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Amenities",
+          "item": "https://www.sobhaoneworlds.in/amenities/"
+        }
+      ]
+    },
+
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.sobhaoneworlds.in/amenities/#faq",
+      "mainEntity": [
+
+        {
+          "@type": "Question",
+          "name": "What amenities are available at Sobha One World?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sobha One World offers more than 55 premium amenities including a grand clubhouse, swimming pools, sports courts, landscaped gardens, retail plaza, co-working spaces, and dedicated play areas for children."
+          }
+        },
+
+        {
+          "@type": "Question",
+          "name": "Does Sobha One World provide sports and fitness facilities?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, the project includes jogging and walking tracks, cricket practice nets, outdoor fitness zones, skating rink, cycling paths, swimming pools, and multiple sports courts to support an active lifestyle."
+          }
+        },
+
+        {
+          "@type": "Question",
+          "name": "What amenities are designed for children?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Children have access to play areas with swings, trampolines, sand pits, climbing walls, interactive games, and skate parks that encourage both fun and physical activity."
+          }
+        },
+
+        {
+          "@type": "Question",
+          "name": "Is Sobha One World safe and eco-friendly?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The township offers 24/7 security, CCTV surveillance, controlled access points, EV charging facilities, rainwater harvesting, solar lighting, waste management systems, and a sewage treatment plant for sustainable living."
+          }
+        },
+
+        {
+          "@type": "Question",
+          "name": "What facilities are available in the clubhouse?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sobha One World includes two large clubhouses of over 50,000 sq. ft. and one ultra-luxury clubhouse of about 75,000 sq. ft. featuring a gym, indoor pool, spa, aerobics studio, mini theatre, banquet halls, indoor games, and rooftop social spaces."
+          }
+        }
+
+      ]
+    }
+
+  ]
+}
+</script>
+</body>
+
+</html>
