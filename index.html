@@ -47,8 +47,7 @@
     <!-- Preload Hero Image -->
     <link rel="preload" href="/images/sobha-one-world-banner.webp" as="image">
 
-    <!-- Fonts -->
-    <link rel="preload" href="/css/fonts/rubik.woff2" as="font" type="font/woff2" crossorigin>
+    
 
     <!-- CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -56,6 +55,7 @@
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <meta name="google-site-verification" content="G7HWoBGinE4gD8w3154soAO8DhqtvLGVuu6Wafny2EM" />
 
     <!-- Custom Styles -->
     <style>
@@ -99,7 +99,7 @@
 
                 <li><a class="nav-active" href="/">Home</a></li>
                 <li><a class="nav-not-active" href="/price.html">Price</a></li>
-                <li><a class="nav-not-active" href="/floor-plans.html">Floor Plans</a></li>
+                <li><a class="nav-not-active" href="/floor-plans.html">Floor Plan</a></li>
                 <li><a class="nav-not-active" href="/master-plan.html">Master Plan</a></li>
                 <li><a class="nav-not-active" href="/location.html">Location</a></li>
                 <li><a class="nav-not-active" href="/amenities.html">Amenities</a></li>
@@ -133,8 +133,8 @@
 
             <li><a href="/" onclick="toggleMenu()" class="nav-active w-full">Home</a></li>
             <li><a href="/price.html" onclick="toggleMenu()">Price</a></li>
-            <li><a href="/sitefloorplan.html" onclick="toggleMenu()">Site & Floor Plan</a></li>
-            <li><a href="/masterplan.html" onclick="toggleMenu()">Master Plan</a></li>
+            <li><a href="/floor-plans.html" onclick="toggleMenu()">Floor Plan</a></li>
+            <li><a href="/master-plan.html" onclick="toggleMenu()">Master Plan</a></li>
             <li><a href="/location.html" onclick="toggleMenu()">Location</a></li>
             <li><a href="/amenities.html" onclick="toggleMenu()">Amenities</a></li>
             <li><a href="#gallery" onclick="toggleMenu()">Gallery</a></li>
@@ -236,12 +236,12 @@
 
                 <form class="flex flex-col gap-5">
                     <input required
-                        class="w-full px-4 py-3 border-2 border-gray-200 rounded-xl text-base focus:outline-none focus:border-blue-800 transition-colors"
+                        class="w-full px-4 py-3 border-2 border-gray-200 rounded-xl text-base focus:outline-none focus:border-[#e9bf41] transition-colors"
                         type="text" placeholder="Name" id="name_2">
 
                     <div class="flex gap-2">
                         <select
-                            class="px-4 py-3 border-2 border-gray-200 rounded-xl text-base focus:outline-none focus:border-blue-800"
+                            class="px-4 py-3 border-2 border-gray-200 rounded-xl text-base focus:outline-none focus:border-[#e9bf41]"
                             id="country_code_2">
                             <option value="+91">+91</option>
                             <option value="+971">+971</option>
@@ -249,16 +249,16 @@
                             <option value="+1">+1</option>
                         </select>
                         <input required
-                            class="flex-1 px-4 py-3 border-2 border-gray-200 rounded-xl text-base focus:outline-none focus:border-blue-800 transition-colors"
+                            class="flex-1 px-4 py-3 border-2 border-gray-200 rounded-xl text-base focus:outline-none focus:border-[#e9bf41] transition-colors"
                             type="text" placeholder="Mobile No" id="number_2">
                     </div>
 
                     <input required
-                        class="w-full px-4 py-3 border-2 border-gray-200 rounded-xl text-base focus:outline-none focus:border-blue-800 transition-colors"
+                        class="w-full px-4 py-3 border-2 border-gray-200 rounded-xl text-base focus:outline-none focus:border-[#e9bf41] transition-colors"
                         type="email" placeholder="E-Mail Address" id="email_2">
 
                     <button type="submit" id="submitBtn_2"
-                        class="w-full bg-primary text-white py-3 rounded-xl text-lg font-semibold hover:shadow-xl hover:shadow-blue-800/40 hover:-translate-y-0.5 transition-all duration-300"
+                        class="w-full bg-primary text-white py-3 rounded-xl text-lg font-semibold hover:shadow-xl hover:shadow-yellow-800/40 hover:-translate-y-0.5 transition-all duration-300"
                         onclick="submitBtn2(event)">
                         Submit
                     </button>
@@ -276,9 +276,9 @@
         </div>
     </section>
 
-    <section class="max-w-5xl m-auto mx-autopy-8">
+    <section class="max-w-5xl m-auto mx-autopy-8 p-4">
 
-        <div class=" my-8">
+        <div class=" mb-6">
             <h2 id="gallery-heading" class="text-xl md:text-2xl font-bold text-gray-900 text-center mb-2">
                 About Sobha One World
             </h2>
@@ -286,7 +286,7 @@
         </div>
 
         <div class="">
-            <ul class="grid md:grid-cols-4 gap-6">
+            <ul class="grid grid-cols-2 md:grid-cols-4 gap-6">
 
                 <li class="flex items-center gap-4 p-3 bg-gray-100 rounded-lg hover:bg-yellow-100 transition">
                     <i class="fa fa-building text-yellow-500 text-xl"></i>
@@ -857,7 +857,7 @@
 
     <section id="price" class="p-4">
         <div class="max-w-5xl mx-auto">
-            <div class=" my-8">
+            <div class=" mb-6">
                 <h2 id="gallery-heading" class="text-xl md:text-2xl font-bold text-gray-900 text-center mb-2">
                     Apartment Types & Price Table
                 </h2>
@@ -1540,7 +1540,7 @@
 
     <section id="location" class="p-4">
         <div class="max-w-5xl mx-auto">
-            <div class=" my-6">
+            <div class=" mb-6">
                 <h2 id="gallery-heading" class="text-xl md:text-2xl font-bold text-gray-900 text-center mb-2">
                     Location & Connectivity
                 </h2>
@@ -2201,75 +2201,79 @@
             <div class="space-y-6 text-gray-800 leading-relaxed mt-5">
 
                 <h2 class="text-2xl font-semibold mb-4">Hoskuru</h2>
-                <img 
-                src="./images/hoskuru.webp" 
-                alt="Hoskuru"
-                loading="lazy"
-                class="w-full"
-                >
-  <p class="mb-4">
-    <a href="https://en.wikipedia.org/wiki/Huskur,_Bengaluru_East" target="_blank" rel="noopener noreferrer"><b>Hoskuru</b></a>, particularly the Hoskuru–Budigere stretch in East Bangalore, has rapidly developed into a high-potential residential and commercial destination. What was once a quiet peripheral zone is now transforming into a significant real estate growth corridor, often referred to as a “Neo-Whitefield” extension due to its strong development momentum.
-  </p>
-  <p class="mb-4">
-    By 2026, this region is expected to play a key role in shaping East Bangalore’s urban expansion, attracting both investors and end-users looking for long-term value appreciation.
-  </p>
+                <img src="./images/hoskuru.webp" alt="Hoskuru" loading="lazy" class="w-full">
+                <p class="mb-4">
+                    <a href="https://en.wikipedia.org/wiki/Huskur,_Bengaluru_East" target="_blank"
+                        rel="noopener noreferrer"><b>Hoskuru</b></a>, particularly the Hoskuru–Budigere stretch in East
+                    Bangalore, has rapidly developed into a high-potential residential and commercial destination. What
+                    was once a quiet peripheral zone is now transforming into a significant real estate growth corridor,
+                    often referred to as a “Neo-Whitefield” extension due to its strong development momentum.
+                </p>
+                <p class="mb-4">
+                    By 2026, this region is expected to play a key role in shaping East Bangalore’s urban expansion,
+                    attracting both investors and end-users looking for long-term value appreciation.
+                </p>
 
-  <h2 class="text-2xl font-semibold mb-4">Strategic Growth Position – “Golden Triangle” Advantage</h2>
-  <p class="mb-4">
-    Hoskuru holds a unique geographic advantage as it forms a strategic triangle with:
-  </p>
-  <ul class="list-disc pl-6 mb-4">
-    <li>Whitefield IT hub (major technology and employment center)</li>
-    <li>North-East Aerospace & Manufacturing SEZ zones</li>
-    <li>Budigere–Hoskote residential expansion belt</li>
-  </ul>
-  <p class="mb-4">
-    This combination of IT, industrial, and residential growth drivers makes the region highly promising for future development and investment potential.
-  </p>
+                <h2 class="text-2xl font-semibold mb-4">Strategic Growth Position – “Golden Triangle” Advantage</h2>
+                <p class="mb-4">
+                    Hoskuru holds a unique geographic advantage as it forms a strategic triangle with:
+                </p>
+                <ul class="list-disc pl-6 mb-4">
+                    <li>Whitefield IT hub (major technology and employment center)</li>
+                    <li>North-East Aerospace & Manufacturing SEZ zones</li>
+                    <li>Budigere–Hoskote residential expansion belt</li>
+                </ul>
+                <p class="mb-4">
+                    This combination of IT, industrial, and residential growth drivers makes the region highly promising
+                    for future development and investment potential.
+                </p>
 
-  <h2 class="text-2xl font-semibold mb-4">Infrastructure-Driven Development</h2>
-  <p class="mb-4">
-    The growth of Hoskuru is strongly supported by large-scale infrastructure projects that are reshaping connectivity across East Bangalore:
-  </p>
-  <ul class="list-disc pl-6 mb-4">
-    <li>Satellite Town Ring Road (STRR) – Enhancing orbital connectivity around Bangalore</li>
-    <li>Bengaluru–Chennai Expressway – Boosting regional and interstate travel efficiency</li>
-    <li>Improved road networks linking Whitefield, Hoskote, and Budigere corridors</li>
-  </ul>
-  <p class="mb-4">
-    These developments are significantly reducing travel time and increasing accessibility to major employment zones.
-  </p>
+                <h2 class="text-2xl font-semibold mb-4">Infrastructure-Driven Development</h2>
+                <p class="mb-4">
+                    The growth of Hoskuru is strongly supported by large-scale infrastructure projects that are
+                    reshaping connectivity across East Bangalore:
+                </p>
+                <ul class="list-disc pl-6 mb-4">
+                    <li>Satellite Town Ring Road (STRR) – Enhancing orbital connectivity around Bangalore</li>
+                    <li>Bengaluru–Chennai Expressway – Boosting regional and interstate travel efficiency</li>
+                    <li>Improved road networks linking Whitefield, Hoskote, and Budigere corridors</li>
+                </ul>
+                <p class="mb-4">
+                    These developments are significantly reducing travel time and increasing accessibility to major
+                    employment zones.
+                </p>
 
-  <h2 class="text-2xl font-semibold mb-4">Lifestyle & Investment Appeal</h2>
-  <p class="mb-4">
-    Hoskuru is increasingly attracting professionals and high-income groups who prefer a peaceful yet well-connected lifestyle.
-  </p>
-  <p class="mb-4">Key advantages include:</p>
-  <ul class="list-disc pl-6 mb-4">
-    <li>Proximity to Whitefield IT corridor</li>
-    <li>Cleaner and less congested living environment</li>
-    <li>Rapid appreciation in land and property values</li>
-    <li>Growing demand for premium residential communities</li>
-  </ul>
-  <p class="mb-4">
-    This makes it a preferred choice for long-term residential investment in East Bangalore.
-  </p>
+                <h2 class="text-2xl font-semibold mb-4">Lifestyle & Investment Appeal</h2>
+                <p class="mb-4">
+                    Hoskuru is increasingly attracting professionals and high-income groups who prefer a peaceful yet
+                    well-connected lifestyle.
+                </p>
+                <p class="mb-4">Key advantages include:</p>
+                <ul class="list-disc pl-6 mb-4">
+                    <li>Proximity to Whitefield IT corridor</li>
+                    <li>Cleaner and less congested living environment</li>
+                    <li>Rapid appreciation in land and property values</li>
+                    <li>Growing demand for premium residential communities</li>
+                </ul>
+                <p class="mb-4">
+                    This makes it a preferred choice for long-term residential investment in East Bangalore.
+                </p>
 
-  <h2 class="text-2xl font-semibold mb-4">Future Outlook</h2>
-  <p class="mb-4">
-    With continuous infrastructure upgrades and increasing real estate demand, Hoskuru is expected to evolve into a premium residential extension of Whitefield. Its combination of strategic location, connectivity, and development potential positions it as one of the most promising micro-markets in East Bangalore’s future growth landscape.
-  </p>
+                <h2 class="text-2xl font-semibold mb-4">Future Outlook</h2>
+                <p class="mb-4">
+                    With continuous infrastructure upgrades and increasing real estate demand, Hoskuru is expected to
+                    evolve into a premium residential extension of Whitefield. Its combination of strategic location,
+                    connectivity, and development potential positions it as one of the most promising micro-markets in
+                    East Bangalore’s future growth landscape.
+                </p>
 
                 <h2 class="text-2xl font-semibold mb-4">Hoskote</h2>
-                <img 
-                src="./images/about-hoskote.webp" 
-                alt="Hoskote"
-                loading="lazy"
-                class="w-full"
-                >
+                <img src="./images/about-hoskote.webp" alt="Hoskote" loading="lazy" class="w-full">
                 <p class="mb-4">
-                    <a href="https://www.sobhaoneworlds.in/hoskote.html"><b>Hoskote</b></a> has rapidly evolved from a quiet peripheral town into a fast-developing residential hotspot
-                    in <a href="https://www.sobhaoneworlds.in/east-bangalore.html"><b>East Bangalore</b></a>. Its transformation is largely driven by its strategic proximity to Whitefield’s
+                    <a href="https://www.sobhaoneworlds.in/hoskote.html"><b>Hoskote</b></a> has rapidly evolved from a
+                    quiet peripheral town into a fast-developing residential hotspot
+                    in <a href="https://www.sobhaoneworlds.in/east-bangalore.html"><b>East Bangalore</b></a>. Its
+                    transformation is largely driven by its strategic proximity to Whitefield’s
                     IT corridor and ongoing infrastructure upgrades. With rising demand from professionals working in
                     nearby tech zones, property values in Hoskote are steadily increasing, making it a strong investment
                     destination for the future.
@@ -2277,7 +2281,9 @@
 
                 <h2 class="text-2xl font-semibold mb-4">Growth Story of Hoskote</h2>
                 <p class="mb-4">
-                    Earlier, <a href="https://en.wikipedia.org/wiki/Hoskote" target="_blank" rel="noopener noreferrer"><b>Hoskote</b></a> was a small settlement on the outskirts of Bangalore. However, over the last
+                    Earlier, <a href="https://en.wikipedia.org/wiki/Hoskote" target="_blank"
+                        rel="noopener noreferrer"><b>Hoskote</b></a> was a small settlement on the outskirts of
+                    Bangalore. However, over the last
                     decade, it has experienced significant urban development due to IT expansion and improved
                     connectivity.
                 </p>
@@ -2328,14 +2334,11 @@
                 </ul>
 
                 <h2 class="text-2xl font-semibold mb-4">Bangalore</h2>
-                <img 
-                src="./images/bangalore.webp" 
-                alt="Bangalore"
-                loading="lazy"
-                class="w-full"
-                >
+                <img src="./images/bangalore.webp" alt="Bangalore" loading="lazy" class="w-full">
                 <p class="mb-4">
-                    <a href="https://en.wikipedia.org/wiki/Bengaluru" target="_blank" rel="noopener noreferrer"><b>Bangalore</b></a>, widely known as India’s Silicon Valley, continues to be one of the strongest real estate
+                    <a href="https://en.wikipedia.org/wiki/Bengaluru" target="_blank"
+                        rel="noopener noreferrer"><b>Bangalore</b></a>, widely known as India’s Silicon Valley,
+                    continues to be one of the strongest real estate
                     markets in the country. Among its various zones, East Bangalore is emerging as the most active
                     growth corridor due to strong IT presence and continuous infrastructure development.
                 </p>
@@ -2381,7 +2384,7 @@
 
     <section id="amenities" class="p-4">
         <div class="max-w-5xl mx-auto">
-            <div class=" my-8">
+            <div class=" mb-6">
                 <h2 id="gallery-heading" class="text-xl md:text-2xl font-bold text-gray-900 text-center mb-2">
                     Amenities & Features
                 </h2>
@@ -2636,8 +2639,8 @@
 
     <section id="gallery" class="p-4">
         <div class="max-w-5xl mx-auto">
-            <div class="text-center my-8">
-                <h2  class="text-2xl font-bold text-gray-900 text-center mb-2">
+            <div class="text-center mb-6">
+                <h2 class="text-2xl font-bold text-gray-900 text-center mb-2">
                     Sobha One World Gallery
                 </h2>
                 <div class="w-full h-px bg-gray-200 mb-10" />
@@ -2645,21 +2648,37 @@
 
             <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
 
-                <img src="./images/galleryimg6.webp" alt="Sobha building view"
+                <img src="./images/sobha-one-world-banner.webp" alt="Sobha One World"
                     class="aspect-[4/3] w-full cursor-pointer rounded-md hover:scale-105 transition"
                     onclick="openModal(0)">
 
-                <img src="./images/galleryimg7.webp" alt="Swimming pool area"
+                <img src="./images/sobha-one-world.webp" alt="Sobha One World"
                     class="aspect-[4/3] w-full cursor-pointer rounded-md hover:scale-105 transition"
                     onclick="openModal(1)">
 
-                <img src="./images/galleryimg8.png" alt="Clubhouse view"
+                <img src="./images/sobhaoneworld.webp" alt="Sobha One World"
                     class="aspect-[4/3] w-full cursor-pointer rounded-md hover:scale-105 transition"
                     onclick="openModal(2)">
 
-                <img src="./images/galleryimg9.jpeg" alt="Tower view"
+                <img src="./images/sobhaoneworld-price.webp" alt="Sobha One World"
                     class="aspect-[4/3] w-full cursor-pointer rounded-md hover:scale-105 transition"
                     onclick="openModal(3)">
+
+                <img src="./images/sobha-one-world-gallery-1.webp" alt="Sobha One World"
+                    class="aspect-[4/3] w-full cursor-pointer rounded-md hover:scale-105 transition"
+                    onclick="openModal(4)">
+
+                <img src="./images/sobha-one-world-gallery-2.webp" alt="Sobha One World"
+                    class="aspect-[4/3] w-full cursor-pointer rounded-md hover:scale-105 transition"
+                    onclick="openModal(5)">
+
+                <img src="./images/sobha-one-world-gallery-3.webp" alt="Sobha One World"
+                    class="aspect-[4/3] w-full cursor-pointer rounded-md hover:scale-105 transition"
+                    onclick="openModal(6)">
+
+                <img src="./images/sobha-one-world-gallery-4.webp" alt="Sobha One World"
+                    class="aspect-[4/3] w-full cursor-pointer rounded-md hover:scale-105 transition"
+                    onclick="openModal(7)">
 
             </div>
         </div>
@@ -2667,320 +2686,331 @@
 
     <section id="rera" class="p-4">
         <div class="max-w-5xl mx-auto">
-            <div class=" my-8">
-                <h2  class="text-2xl font-bold text-gray-900 text-center mb-2">
+            <div class=" mb-6">
+                <h2 class="text-2xl font-bold text-gray-900 text-center mb-2">
                     RERA, Legal Approvals & Documentation
                 </h2>
                 <div class="w-full h-px bg-gray-200 mb-10" />
             </div>
             <div class="space-y-6 text-gray-800 leading-relaxed mb-5">
-  <img 
-  src="./images/rera-approvals.png" 
-  alt="RERA, Legal Approvals & Documentation"
-  loading="lazy"
-  class="w-full mt-6"
-  >
-  <p class="mb-4">
-    The development of Sobha One World is being carried out under strict regulatory and legal frameworks to ensure transparency, buyer protection, and timely delivery.
-  </p>
-  <p class="mb-4">
-    The Real Estate Regulatory Authority (RERA) plays a crucial role in regulating the project and safeguarding investor interests throughout the development lifecycle.
-  </p>
+                <img src="./images/rera-approvals.png" alt="RERA, Legal Approvals & Documentation" loading="lazy"
+                    class="w-full mt-6">
+                <p class="mb-4">
+                    The development of Sobha One World is being carried out under strict regulatory and legal frameworks
+                    to ensure transparency, buyer protection, and timely delivery.
+                </p>
+                <p class="mb-4">
+                    The Real Estate Regulatory Authority (RERA) plays a crucial role in regulating the project and
+                    safeguarding investor interests throughout the development lifecycle.
+                </p>
 
-  <h2 class="text-2xl font-semibold mb-4">Key Benefits of RERA Compliance</h2>
-  <p class="mb-4">
-    RERA ensures a safe and transparent buying experience through the following protections:
-  </p>
+                <h2 class="text-2xl font-semibold mb-4">Key Benefits of RERA Compliance</h2>
+                <p class="mb-4">
+                    RERA ensures a safe and transparent buying experience through the following protections:
+                </p>
 
-  <h3 class="text-xl font-semibold mt-4 mb-2">1. Secure Fund Management</h3>
-  <ul class="list-disc pl-6 mb-4">
-    <li>Builders are required to deposit 70% of project funds in an escrow account</li>
-    <li>This ensures money is used only for construction of the specific project</li>
-    <li>Prevents diversion of funds to other developments</li>
-  </ul>
+                <h3 class="text-xl font-semibold mt-4 mb-2">1. Secure Fund Management</h3>
+                <ul class="list-disc pl-6 mb-4">
+                    <li>Builders are required to deposit 70% of project funds in an escrow account</li>
+                    <li>This ensures money is used only for construction of the specific project</li>
+                    <li>Prevents diversion of funds to other developments</li>
+                </ul>
 
-  <h3 class="text-xl font-semibold mt-4 mb-2">2. Transparency in Marketing</h3>
-  <ul class="list-disc pl-6 mb-4">
-    <li>Developers must provide accurate and verified project details</li>
-    <li>False advertisements and misleading claims are strictly restricted</li>
-    <li>Buyers receive authentic and legally validated information</li>
-  </ul>
+                <h3 class="text-xl font-semibold mt-4 mb-2">2. Transparency in Marketing</h3>
+                <ul class="list-disc pl-6 mb-4">
+                    <li>Developers must provide accurate and verified project details</li>
+                    <li>False advertisements and misleading claims are strictly restricted</li>
+                    <li>Buyers receive authentic and legally validated information</li>
+                </ul>
 
-  <h3 class="text-xl font-semibold mt-4 mb-2">3. Buyer Protection</h3>
-  <ul class="list-disc pl-6 mb-4">
-    <li>Timely delivery obligations are enforced</li>
-    <li>Legal accountability for delays or deviations</li>
-    <li>Greater trust between buyers and developers</li>
-  </ul>
+                <h3 class="text-xl font-semibold mt-4 mb-2">3. Buyer Protection</h3>
+                <ul class="list-disc pl-6 mb-4">
+                    <li>Timely delivery obligations are enforced</li>
+                    <li>Legal accountability for delays or deviations</li>
+                    <li>Greater trust between buyers and developers</li>
+                </ul>
 
-  <h2 class="text-2xl font-semibold mb-4">RERA Registration Status</h2>
-  <ul class="list-disc pl-6 mb-4">
-    <li><strong>RERA Application Status:</strong> Applied (Under Review)</li>
-    <li><strong>Authority:</strong> Karnataka RERA</li>
-    <li><strong>Expected Approval:</strong> May 2026</li>
-    <li><strong>Current Phase:</strong> Pre-launch stage</li>
-  </ul>
+                <h2 class="text-2xl font-semibold mb-4">RERA Registration Status</h2>
+                <ul class="list-disc pl-6 mb-4">
+                    <li><strong>RERA Application Status:</strong> Applied (Under Review)</li>
+                    <li><strong>Authority:</strong> Karnataka RERA</li>
+                    <li><strong>Expected Approval:</strong> May 2026</li>
+                    <li><strong>Current Phase:</strong> Pre-launch stage</li>
+                </ul>
 
-  <p class="mb-4">
-    Official verification will be available on the Karnataka RERA portal once registration is approved.
-  </p>
+                <p class="mb-4">
+                    Official verification will be available on the Karnataka RERA portal once registration is approved.
+                </p>
 
-  <h2 class="text-2xl font-semibold mb-4">Project Timeline Overview</h2>
-  <div class="overflow-x-auto mb-4">
-    <table class="min-w-full border border-gray-300">
-      <thead>
-        <tr class="bg-gray-100">
-          <th class="border px-4 py-2 text-left">Milestone</th>
-          <th class="border px-4 py-2 text-left">Timeline</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td class="border px-4 py-2">Project Launch</td>
-          <td class="border px-4 py-2">May 2026</td>
-        </tr>
-        <tr>
-          <td class="border px-4 py-2">Current Phase</td>
-          <td class="border px-4 py-2">Pre-launch</td>
-        </tr>
-        <tr>
-          <td class="border px-4 py-2">Construction Start</td>
-          <td class="border px-4 py-2">Post-approval groundwork stage</td>
-        </tr>
-        <tr>
-          <td class="border px-4 py-2">Expected Completion</td>
-          <td class="border px-4 py-2">December 2031</td>
-        </tr>
-        <tr>
-          <td class="border px-4 py-2">Expected Possession</td>
-          <td class="border px-4 py-2">December 2031</td>
-        </tr>
-        <tr>
-          <td class="border px-4 py-2">OC (Occupancy Certificate)</td>
-          <td class="border px-4 py-2">2031 (Expected)</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
+                <h2 class="text-2xl font-semibold mb-4">Project Timeline Overview</h2>
+                <div class="overflow-x-auto mb-4">
+                    <table class="min-w-full border border-gray-300">
+                        <thead>
+                            <tr class="bg-gray-100">
+                                <th class="border px-4 py-2 text-left">Milestone</th>
+                                <th class="border px-4 py-2 text-left">Timeline</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="border px-4 py-2">Project Launch</td>
+                                <td class="border px-4 py-2">May 2026</td>
+                            </tr>
+                            <tr>
+                                <td class="border px-4 py-2">Current Phase</td>
+                                <td class="border px-4 py-2">Pre-launch</td>
+                            </tr>
+                            <tr>
+                                <td class="border px-4 py-2">Construction Start</td>
+                                <td class="border px-4 py-2">Post-approval groundwork stage</td>
+                            </tr>
+                            <tr>
+                                <td class="border px-4 py-2">Expected Completion</td>
+                                <td class="border px-4 py-2">December 2031</td>
+                            </tr>
+                            <tr>
+                                <td class="border px-4 py-2">Expected Possession</td>
+                                <td class="border px-4 py-2">December 2031</td>
+                            </tr>
+                            <tr>
+                                <td class="border px-4 py-2">OC (Occupancy Certificate)</td>
+                                <td class="border px-4 py-2">2031 (Expected)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
 
-  <h2 class="text-2xl font-semibold mb-4">Bank Approvals & Home Loans</h2>
-  <p class="mb-4">
-    Once RERA approval is completed, the project is expected to receive approvals from leading financial institutions. Backed by strong developer credibility and high credit ratings, home loan accessibility is expected to be smooth.
-  </p>
-  <ul class="list-disc pl-6 mb-4">
-    <li>Strong financial trust due to developer reputation</li>
-    <li>Competitive home loan interest rates expected</li>
-    <li>Flexible repayment options from leading banks</li>
-    <li>Easy loan processing for eligible buyers</li>
-  </ul>
+                <h2 class="text-2xl font-semibold mb-4">Bank Approvals & Home Loans</h2>
+                <p class="mb-4">
+                    Once RERA approval is completed, the project is expected to receive approvals from leading financial
+                    institutions. Backed by strong developer credibility and high credit ratings, home loan
+                    accessibility is expected to be smooth.
+                </p>
+                <ul class="list-disc pl-6 mb-4">
+                    <li>Strong financial trust due to developer reputation</li>
+                    <li>Competitive home loan interest rates expected</li>
+                    <li>Flexible repayment options from leading banks</li>
+                    <li>Easy loan processing for eligible buyers</li>
+                </ul>
 
-  <h2 class="text-2xl font-semibold mb-4">Current Construction Status (2026 Update)</h2>
-  <ul class="list-disc pl-6">
-    <li>Site preparation and land clearing work in progress</li>
-    <li>Heavy machinery deployed for groundwork leveling</li>
-    <li>Preparation for model apartment construction underway</li>
-    <li>Pre-launch planning and layout execution ongoing</li>
-  </ul>
+                <h2 class="text-2xl font-semibold mb-4">Current Construction Status (2026 Update)</h2>
+                <ul class="list-disc pl-6">
+                    <li>Site preparation and land clearing work in progress</li>
+                    <li>Heavy machinery deployed for groundwork leveling</li>
+                    <li>Preparation for model apartment construction underway</li>
+                    <li>Pre-launch planning and layout execution ongoing</li>
+                </ul>
 
-</div>
+            </div>
         </div>
     </section>
 
     <section id="reviews" class="p-4">
         <div class="max-w-5xl mx-auto">
-            <div class=" mb-8">
-                <h2  class="text-2xl font-bold text-gray-900 text-center mb-2">
+            <div class=" mb-6">
+                <h2 class="text-2xl font-bold text-gray-900 text-center mb-2">
                     Reviews & Investment Outlook
                 </h2>
                 <div class="w-full h-px bg-gray-200 mb-10" />
             </div>
             <div class="space-y-6 text-gray-800 leading-relaxed mb-5">
-                <img 
-  src="./images/reviews.webp" 
-  alt="Reviews"
-  loading="lazy"
-  class="w-full mt-6"
-  >
-  <p class="mb-4">
-    The development of Sobha One World has received strong attention from both homebuyers and real estate analysts due to its scale, location advantage, and long-term growth potential.
-  </p>
+                <img src="./images/reviews.webp" alt="Reviews" loading="lazy" class="w-full mt-6">
+                <p class="mb-4">
+                    The development of Sobha One World has received strong attention from both homebuyers and real
+                    estate analysts due to its scale, location advantage, and long-term growth potential.
+                </p>
 
-  <h2 class="text-2xl font-semibold mb-4">Customer Sentiment</h2>
-  <p class="mb-4">
-    Homebuyers have responded positively to the project’s large-scale township planning and lifestyle-focused design.
-  </p>
-  <ul class="list-disc pl-6 mb-4">
-    <li>A well-planned 300-acre integrated township concept with extensive green zones</li>
-    <li>Balanced mix of modern living spaces and open landscapes</li>
-    <li>Strong appeal among IT professionals working in nearby tech corridors</li>
-  </ul>
-  <p class="mb-4">
-    Its proximity to key employment hubs like Whitefield, ITPL, EPIP Zone, and RMZ Ecospace further enhances its residential demand.
-  </p>
+                <h2 class="text-2xl font-semibold mb-4">Customer Sentiment</h2>
+                <p class="mb-4">
+                    Homebuyers have responded positively to the project’s large-scale township planning and
+                    lifestyle-focused design.
+                </p>
+                <ul class="list-disc pl-6 mb-4">
+                    <li>A well-planned 300-acre integrated township concept with extensive green zones</li>
+                    <li>Balanced mix of modern living spaces and open landscapes</li>
+                    <li>Strong appeal among IT professionals working in nearby tech corridors</li>
+                </ul>
+                <p class="mb-4">
+                    Its proximity to key employment hubs like Whitefield, ITPL, EPIP Zone, and RMZ Ecospace further
+                    enhances its residential demand.
+                </p>
 
-  <h2 class="text-2xl font-semibold mb-4">Expert Opinions</h2>
-  <p class="mb-4">
-    Real estate analysts consider Hoskote one of the fastest-growing micro-markets in East Bangalore.
-  </p>
-  <ul class="list-disc pl-6 mb-4">
-    <li>Often referred to as the emerging “Whitefield 2.0” growth zone</li>
-    <li>Strong infrastructure push driving long-term appreciation</li>
-    <li>NH-75 connectivity supporting sustained accessibility and development</li>
-  </ul>
-  <p class="mb-4">
-    Experts highlight that ongoing infrastructure upgrades will continue to strengthen the region’s investment profile.
-  </p>
+                <h2 class="text-2xl font-semibold mb-4">Expert Opinions</h2>
+                <p class="mb-4">
+                    Real estate analysts consider Hoskote one of the fastest-growing micro-markets in East Bangalore.
+                </p>
+                <ul class="list-disc pl-6 mb-4">
+                    <li>Often referred to as the emerging “Whitefield 2.0” growth zone</li>
+                    <li>Strong infrastructure push driving long-term appreciation</li>
+                    <li>NH-75 connectivity supporting sustained accessibility and development</li>
+                </ul>
+                <p class="mb-4">
+                    Experts highlight that ongoing infrastructure upgrades will continue to strengthen the region’s
+                    investment profile.
+                </p>
 
-  <h2 class="text-2xl font-semibold mb-4">Investment Potential</h2>
-  <p class="mb-4">
-    From an investment perspective, the project offers strong long-term benefits:
-  </p>
-  <ul class="list-disc pl-6">
-    <li>High potential for capital appreciation due to early-stage pricing</li>
-    <li>Consistent rental demand from nearby IT corridors</li>
-    <li>Strong resale value supported by brand trust</li>
-    <li>Backing of a reputed developer with a proven track record</li>
-  </ul>
-  <p class="mt-4">
-    The presence of major employment hubs nearby further enhances rental stability and occupancy rates.
-  </p>
+                <h2 class="text-2xl font-semibold mb-4">Investment Potential</h2>
+                <p class="mb-4">
+                    From an investment perspective, the project offers strong long-term benefits:
+                </p>
+                <ul class="list-disc pl-6">
+                    <li>High potential for capital appreciation due to early-stage pricing</li>
+                    <li>Consistent rental demand from nearby IT corridors</li>
+                    <li>Strong resale value supported by brand trust</li>
+                    <li>Backing of a reputed developer with a proven track record</li>
+                </ul>
+                <p class="mt-4">
+                    The presence of major employment hubs nearby further enhances rental stability and occupancy rates.
+                </p>
 
-</div>
+            </div>
         </div>
     </section>
 
     <section id="sobhagroup" class="p-4">
         <div class="max-w-5xl mx-auto">
-            <div class=" mb-8">
-                <h2  class="text-2xl font-bold text-gray-900 text-center mb-2">
+            <div class=" mb-6">
+                <h2 class="text-2xl font-bold text-gray-900 text-center mb-2">
                     Legacy of Sobha Limited
                 </h2>
                 <div class="w-full h-px bg-gray-200 mb-10" />
             </div>
             <div class="space-y-6 text-gray-800 leading-relaxed mb-5">
-                <img 
-  src="./images/sobha-limited.webp" 
-  alt="Sobha Limited"
-  loading="lazy"
-  class="w-full mt-6"
-  >
-  <p class="mb-4">
-    <a href="http://www.sobha.com" target="_blank" rel="noopener noreferrer"><b>Sobha Limited</b></a> is one of India’s most reputed and trusted real estate developers, known for its commitment to quality construction and timely delivery. Established in 1995 by P.N.C. Menon, the company has grown into a major national developer with a strong presence across India.
-  </p>
-  <p class="mb-4">
-    Over the years, <a href="https://www.sobhaoneworlds.in/sobha-limited.html"><b>Sobha Limited</b></a> has delivered hundreds of landmark residential and commercial developments, earning a reputation for precision engineering and premium craftsmanship.
-  </p>
+                <img src="./images/sobha-limited.webp" alt="Sobha Limited" loading="lazy" class="w-full mt-6">
+                <p class="mb-4">
+                    <a href="http://www.sobha.com" target="_blank" rel="noopener noreferrer"><b>Sobha Limited</b></a> is
+                    one of India’s most reputed and trusted real estate developers, known for its commitment to quality
+                    construction and timely delivery. Established in 1995 by P.N.C. Menon, the company has grown into a
+                    major national developer with a strong presence across India.
+                </p>
+                <p class="mb-4">
+                    Over the years, <a href="https://www.sobhaoneworlds.in/sobha-limited.html"><b>Sobha Limited</b></a>
+                    has delivered hundreds of landmark residential and commercial developments, earning a reputation for
+                    precision engineering and premium craftsmanship.
+                </p>
 
-  <ul class="list-disc pl-6 mb-4">
-    <li>Over 576 completed projects</li>
-    <li>More than 148+ million sq. ft. developed</li>
-    <li>Presence across 27 cities in 14 states</li>
-    <li>Over 30 years of industry experience</li>
-  </ul>
+                <ul class="list-disc pl-6 mb-4">
+                    <li>Over 576 completed projects</li>
+                    <li>More than 148+ million sq. ft. developed</li>
+                    <li>Presence across 27 cities in 14 states</li>
+                    <li>Over 30 years of industry experience</li>
+                </ul>
 
-  <h2 class="text-2xl font-bold mb-4">Why Buyers Trust Sobha Limited</h2>
+                <h2 class="text-2xl font-bold mb-4">Why Buyers Trust Sobha Limited</h2>
 
-  <h3 class="text-xl font-semibold mt-4 mb-2">1. Strong Legal & Project Security</h3>
-  <ul class="list-disc pl-6 mb-4">
-    <li>All developments follow RERA guidelines</li>
-    <li>Clear land titles and transparent documentation</li>
-    <li>Strong regulatory compliance ensures buyer safety</li>
-  </ul>
+                <h3 class="text-xl font-semibold mt-4 mb-2">1. Strong Legal & Project Security</h3>
+                <ul class="list-disc pl-6 mb-4">
+                    <li>All developments follow RERA guidelines</li>
+                    <li>Clear land titles and transparent documentation</li>
+                    <li>Strong regulatory compliance ensures buyer safety</li>
+                </ul>
 
-  <h3 class="text-xl font-semibold mt-4 mb-2">2. Timely Project Delivery</h3>
-  <ul class="list-disc pl-6 mb-4">
-    <li>Proven track record of completing projects on schedule</li>
-    <li>Structured construction planning and execution</li>
-    <li>Reliable handover commitments</li>
-  </ul>
+                <h3 class="text-xl font-semibold mt-4 mb-2">2. Timely Project Delivery</h3>
+                <ul class="list-disc pl-6 mb-4">
+                    <li>Proven track record of completing projects on schedule</li>
+                    <li>Structured construction planning and execution</li>
+                    <li>Reliable handover commitments</li>
+                </ul>
 
-  <h3 class="text-xl font-semibold mt-4 mb-2">3. Premium Construction Quality</h3>
-  <ul class="list-disc pl-6 mb-4">
-    <li>Focus on in-house construction and quality control</li>
-    <li>High durability standards and superior finishing</li>
-    <li>Consistent luxury housing experience across projects</li>
-  </ul>
+                <h3 class="text-xl font-semibold mt-4 mb-2">3. Premium Construction Quality</h3>
+                <ul class="list-disc pl-6 mb-4">
+                    <li>Focus on in-house construction and quality control</li>
+                    <li>High durability standards and superior finishing</li>
+                    <li>Consistent luxury housing experience across projects</li>
+                </ul>
 
-  <h2 class="text-2xl font-bold mb-4">Awards & Recognition</h2>
-  <ul class="list-disc pl-6">
-    <li>Golden Peacock Award</li>
-    <li>TMA – HLL CSR Award</li>
-    <li>CARE Awards</li>
-    <li>Recognized as a leading CSR-focused brand in Kerala</li>
-  </ul>
+                <h2 class="text-2xl font-bold mb-4">Awards & Recognition</h2>
+                <ul class="list-disc pl-6">
+                    <li>Golden Peacock Award</li>
+                    <li>TMA – HLL CSR Award</li>
+                    <li>CARE Awards</li>
+                    <li>Recognized as a leading CSR-focused brand in Kerala</li>
+                </ul>
 
-</div>
+            </div>
         </div>
     </section>
 
-    <section id="sobhagroup" class="p-4">
+    <section id="faqa" class="p-4">
         <div class="max-w-5xl mx-auto">
-            <div class=" mb-8">
-                <h2  class="text-2xl font-bold text-gray-900 text-center mb-2">
+            <div class=" mb-6">
+                <h2 class="text-2xl font-bold text-gray-900 text-center mb-2">
                     Frequently Asked Questions
                 </h2>
                 <div class="w-full h-px bg-gray-200 mb-10" />
             </div>
             <div class="text-gray-800 leading-relaxed mb-5">
 
-  <div>
-    <h3 class="text-xl font-semibold mt-4 mb-2">1. Where is Sobha One World located?</h3>
-  <p class="mb-4">
-    The project is located in Hoskote, East Bangalore, a fast-growing residential corridor near Whitefield.
-  </p>
-  </div>
+                <div>
+                    <h3 class="text-xl font-semibold mt-4 mb-2">1. Where is Sobha One World located?</h3>
+                    <p class="mb-4">
+                        The project is located in Hoskote, East Bangalore, a fast-growing residential corridor near
+                        Whitefield.
+                    </p>
+                </div>
 
-  <h3 class="text-xl font-semibold mt-4 mb-2">2. Is this project RERA approved?</h3>
-  <p class="mb-4">
-    The RERA approval is currently in process and will be updated once officially registered under Karnataka RERA.
-  </p>
+                <h3 class="text-xl font-semibold mt-4 mb-2">2. Is this project RERA approved?</h3>
+                <p class="mb-4">
+                    The RERA approval is currently in process and will be updated once officially registered under
+                    Karnataka RERA.
+                </p>
 
-  <h3 class="text-xl font-semibold mt-4 mb-2">3. How can I book a home in this project?</h3>
-  <p class="mb-4">
-    Interested buyers can submit their details through the official enquiry form on the website. The sales team will guide you through the booking process and documentation steps.
-  </p>
+                <h3 class="text-xl font-semibold mt-4 mb-2">3. How can I book a home in this project?</h3>
+                <p class="mb-4">
+                    Interested buyers can submit their details through the official enquiry form on the website. The
+                    sales team will guide you through the booking process and documentation steps.
+                </p>
 
-  <h3 class="text-xl font-semibold mt-4 mb-2">4. How many units are available and what sizes are offered?</h3>
-  <p class="mb-4">
-    The project offers around 5,406 luxury apartments, with sizes ranging from 740 sq. ft. to 2,500 sq. ft.
-  </p>
+                <h3 class="text-xl font-semibold mt-4 mb-2">4. How many units are available and what sizes are offered?
+                </h3>
+                <p class="mb-4">
+                    The project offers around 5,406 luxury apartments, with sizes ranging from 740 sq. ft. to 2,500 sq.
+                    ft.
+                </p>
 
-  <h3 class="text-xl font-semibold mt-4 mb-2">5. What is the starting price of the project?</h3>
-  <p class="mb-4">
-    The pricing starts from approximately ₹1.09 Crores onwards, depending on unit type and configuration.
-  </p>
+                <h3 class="text-xl font-semibold mt-4 mb-2">5. What is the starting price of the project?</h3>
+                <p class="mb-4">
+                    The pricing starts from approximately ₹1.09 Crores onwards, depending on unit type and
+                    configuration.
+                </p>
 
-  <h3 class="text-xl font-semibold mt-4 mb-2">6. When is the official launch scheduled?</h3>
-  <p class="mb-4">
-    The official launch of the project is planned for 20th May 2026.
-  </p>
+                <h3 class="text-xl font-semibold mt-4 mb-2">6. When is the official launch scheduled?</h3>
+                <p class="mb-4">
+                    The official launch of the project is planned for 20th May 2026.
+                </p>
 
-  <h3 class="text-xl font-semibold mt-4 mb-2">7. What type of payment plans are available?</h3>
-  <p class="mb-4">
-    The project follows a milestone-based payment structure, where payments are linked to construction progress and booking stages.
-  </p>
+                <h3 class="text-xl font-semibold mt-4 mb-2">7. What type of payment plans are available?</h3>
+                <p class="mb-4">
+                    The project follows a milestone-based payment structure, where payments are linked to construction
+                    progress and booking stages.
+                </p>
 
-  <h3 class="text-xl font-semibold mt-4 mb-2">8. What apartment configurations are available in the project?</h3>
-  <p class="mb-4">
-    The development includes 1 BHK, 2 BHK, 3 BHK, and 4 BHK premium residences, designed for different family sizes and lifestyle needs.
-  </p>
+                <h3 class="text-xl font-semibold mt-4 mb-2">8. What apartment configurations are available in the
+                    project?</h3>
+                <p class="mb-4">
+                    The development includes 1 BHK, 2 BHK, 3 BHK, and 4 BHK premium residences, designed for different
+                    family sizes and lifestyle needs.
+                </p>
 
-  <h3 class="text-xl font-semibold mt-4 mb-2">9. Is Sobha One World a good investment option?</h3>
-  <p class="mb-4">
-    Yes, due to its strategic location near Whitefield and upcoming infrastructure developments, the project is considered a strong long-term investment with good appreciation potential.
-  </p>
+                <h3 class="text-xl font-semibold mt-4 mb-2">9. Is Sobha One World a good investment option?</h3>
+                <p class="mb-4">
+                    Yes, due to its strategic location near Whitefield and upcoming infrastructure developments, the
+                    project is considered a strong long-term investment with good appreciation potential.
+                </p>
 
-  <h3 class="text-xl font-semibold mt-4 mb-2">10. What makes this project different from others in East Bangalore?</h3>
-  <p class="mb-4">
-    The project stands out due to its large township scale, modern planning, extensive green spaces, and strong connectivity to IT hubs, making it suitable for both end-use and investment.
-  </p>
+                <h3 class="text-xl font-semibold mt-4 mb-2">10. What makes this project different from others in East
+                    Bangalore?</h3>
+                <p class="mb-4">
+                    The project stands out due to its large township scale, modern planning, extensive green spaces, and
+                    strong connectivity to IT hubs, making it suitable for both end-use and investment.
+                </p>
 
-</div>
+            </div>
         </div>
     </section>
     <section id="blogs" class="p-4">
         <div class="max-w-5xl mx-auto">
-            <div class="text-center my-8">
+            <div class="text-center mb-6">
                 <h2 id="gallery-heading" class="text-xl md:text-2xl font-bold text-gray-900 text-center mb-2">
                     Sobha One World Blogs
                 </h2>
@@ -3146,19 +3176,16 @@
         </div>
     </footer>
     <section class=" sticky bottom-0">
-        <div class="lg:hidden md:hidden flex justify-between bg-primary p-0.5">
-            <a href="tel:+918317452005" class="bg-primary border-r-2 w-full text-center">
-                <i class='fa fa-phone-square text-white text-lg'></i>
-                <span class="text-white">Call</span>
-            </a>
-            <button onclick="openModel()" class="bg-primary w-full">
+        <div class="lg:hidden md:hidden flex justify-between bg-primary p-1.5">
+            <button onclick="openModel()" class="text-white font-semibold w-full py-0.5">
                 <i class="fa fa-envelope text-white text-md"></i>
-                <span class="text-white">Enquiry</span>
+                Enquiry Now
             </button>
-            <a href="https://wa.me/+919380660766?text=Hi!%20I%27m%20Interested%20In%20Sobha%20Trinity%20Please%20Share%20Details."
-                target="_blank" class="bg-primary  border-l-2 w-full text-center">
-                <i class="fab fa-whatsapp text-[#9b6d07] px-0.5 bg-white rounded-sm"></i>
-                <span class="text-white">Whatsapp</span>
+            <span class="text-white font-semibold">|</span>
+            <a href="https://wa.me/+919380660766?text=Hi!%20I%27m%20Interested%20In%20Sobha%20Hoskote%20Please%20Share%20Details."
+                target="_blank" class="text-white font-semibold text-center w-full py-0.5">
+                <i class="fa-brands fa-whatsapp text-white  p-0.5 rounded-sm"></i>
+                WhatsApp
             </a>
         </div>
     </section>

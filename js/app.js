@@ -1,12 +1,8 @@
-
-
 const menu = document.getElementById("menu");
 
 function toggleMenu() {
   menu.classList.toggle("right-0");
 }
-
-// ===========================
 
 document.addEventListener("DOMContentLoaded", () => {
 
@@ -96,15 +92,13 @@ function validateForm(name, email, number) {
     return true;
 }
 
-// info@searchmyspace.in
-
 async function submitForm(name, email, number, countryCode = '') {
     const data = {
         name,
         email,
         number,
         country_code: countryCode,
-        company_email: 'ahaanwell@gmail.com',
+        company_email: 'info@searchmyspace.in',
         project_name: "Sobha One World"
     };
 
@@ -185,58 +179,15 @@ async function submitBtn2(e) {
 }
 
 
-async function submitBtn3(e) {
-    e.preventDefault();
-    const submitBtn_3 = document.getElementById("submitBtn_3");
-    const name = document.getElementById("name_3").value;
-    const email = document.getElementById("email_3").value;
-    const number = document.getElementById("number_3").value;
-    try {
-        submitBtn_3.innerText = "Downloading...";
-        if (validateForm(name, email, number)) {
-            const isSuccess = await submitForm(name, email, number);
-            if (isSuccess) {
-                document.getElementById("name_3").value = "";
-                document.getElementById("email_3").value = "";
-                document.getElementById("number_3").value = "";
-            }
-        }
-    } catch (error) {
-        console.error("Submission error:", error);
-    } finally {
-        submitBtn_3.innerText = "Download";
-    }
-}
-
-async function submitBtn4(e) {
-    e.preventDefault();
-    const submitBtn_4 = document.getElementById("submitBtn_4");
-    const name = document.getElementById("name_4").value;
-    const email = document.getElementById("email_4").value;
-    const number = document.getElementById("number_4").value;
-    try {
-        submitBtn_4.innerText = "Downloading...";
-        if (validateForm(name, email, number)) {
-            const isSuccess = await submitForm(name, email, number);
-            if (isSuccess) {
-                document.getElementById("name_4").value = "";
-                document.getElementById("email_4").value = "";
-                document.getElementById("number_4").value = "";
-            }
-        }
-    } catch (error) {
-        console.error("Submission error:", error);
-    } finally {
-        submitBtn_4.innerText = "Download";
-    }
-}
-
-
 const galleryData = [
-  { image: "./images/galleryimg6.webp" },
-  { image: "./images/galleryimg7.webp" },
-  { image: "./images/galleryimg8.png" },
-  { image: "./images/galleryimg9.jpeg" }
+  { image: "./images/sobha-one-world-banner.webp" },
+  { image: "./images/sobha-one-world.webp" },
+  { image: "./images/sobhaoneworld.webp" },
+  { image: "./images/sobhaoneworld-price.webp" },
+  { image: "./images/sobha-one-world-gallery-1.webp" },
+  { image: "./images/sobha-one-world-gallery-2.webp" },
+  { image: "./images/sobha-one-world-gallery-3.webp" },
+  { image: "./images/sobha-one-world-gallery-4.webp" },
 ];
 
 let currentIndex = 0;
