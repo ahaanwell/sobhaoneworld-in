@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Block unnecessary files
+Disallow: /cgi-bin/
+Disallow: /tmp/
+
+# Sitemap
+Sitemap: https://www.sobhaoneworlds.in/sitemap.xml
