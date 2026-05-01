@@ -1,5 +1,3 @@
-
-
 const menu = document.getElementById("menu");
 
 function toggleMenu() {
@@ -48,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // Form Submission Handling
-const smtp_api = "https://smtp-server-sepia.vercel.app/send-email";
+const smtp_api = "https://worldcity.online/send-lead";
 
 function validateForm(name, email, number) {
     if (!name || !email || !number) {
@@ -67,7 +65,7 @@ async function submitForm(name, email, number, countryCode = '') {
         number,
         country_code: countryCode,
         company_email: 'info@searchmyspace.in',
-        project_name: "Adarsh Lake View"
+        project_name: "Sobha One World"
     };
 
     try {
