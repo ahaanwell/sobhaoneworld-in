@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 // Form Submission Handling
-const smtp_api = "https://worldcity.online/send-lead";
+const smtp_api = "https://m2nserver.online/send-lead";
 
 function validateForm(name, email, number) {
     if (!name || !email || !number) {
