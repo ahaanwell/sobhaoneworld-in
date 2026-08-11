@@ -1,0 +1,8 @@
+RewriteEngine On
+
+# Existing real files/folders (Index.html, price.html, css/, images/, etc.) are always served as-is.
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Any other /{slug}.html request is a blog — render it dynamically from the CMS.
+RewriteRule ^([a-z0-9-]+)\.html$ blog.php?slug=$1 [L,QSA,NC]

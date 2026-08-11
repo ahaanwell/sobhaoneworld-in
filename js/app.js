@@ -212,3 +212,57 @@ function prevImage() {
   openModal(currentIndex);
 }
 
+function escapeHtml(str) {
+    return String(str ?? "")
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;");
+}
+
+// The CMS API blocks any browser request carrying an Origin header, so this
+// calls blog-list.php (same origin) instead, which fetches from the CMS
+// server-side and passes the data through.
+async function loadBlogs() {
+    const grid = document.getElementById("blogGrid");
+    if (!grid) return;
+
+    try {
+        const res = await fetch("/blog-list.php");
+        if (!res.ok) throw new Error(`Failed to load blogs: ${res.status}`);
+
+        const data = await res.json();
+        const blogs = data.blogs || [];
+
+        if (!blogs.length) {
+            grid.innerHTML = `<p class="text-center text-gray-500 col-span-full">No blogs available yet.</p>`;
+            return;
+        }
+
+        grid.innerHTML = blogs.map(blog => {
+            const image = blog.featuredImage?.url || "./images/logo.webp";
+            const date = new Date(blog.publishedAt).toLocaleDateString("en-IN", {
+                year: "numeric", month: "long", day: "numeric"
+            });
+
+            return `
+                <a href="/${blog.slug}.html" class="group block bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                    <div class="h-44 overflow-hidden">
+                        <img src="${image}" alt="${escapeHtml(blog.title)}" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <div class="p-4">
+                        <p class="text-xs text-gray-500 mb-1">${date}</p>
+                        <h3 class="font-semibold text-gray-900 mb-2 line-clamp-2">${escapeHtml(blog.title)}</h3>
+                        <p class="text-sm text-gray-600 line-clamp-2">${escapeHtml(blog.metaDescription)}</p>
+                        <span class="inline-block mt-3 text-sm font-semibold text-primary">Read More &rarr;</span>
+                    </div>
+                </a>
+            `;
+        }).join("");
+    } catch (error) {
+        console.log("blogs error", error.message);
+        grid.innerHTML = `<p class="text-center text-gray-500 col-span-full">Unable to load blogs right now.</p>`;
+    }
+}
+
+document.addEventListener("DOMContentLoaded", loadBlogs);

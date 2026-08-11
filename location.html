@@ -9,15 +9,15 @@
     <!-- Viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
 
-    <title>Sobha OneWorld Location | Hoskote Bangalore Address & Connectivity</title>
+    <title>Sobha One World Location | Hoskote Bangalore Address & Connectivity</title>
 
     <meta name="description"
-        content="Sobha OneWorld is located in Hoskote, East Bangalore near Old Madras Road (NH-75). Explore its prime address, excellent connectivity to Whitefield, IT hubs, airport, metro, and major highways.">
+        content="Sobha One World is located in Hoskote, East Bangalore near Old Madras Road (NH-75). Explore its prime address, excellent connectivity to Whitefield, IT hubs, airport, metro, and major highways.">
 
     <meta name="keywords"
-        content="Sobha OneWorld location, Sobha OneWorld address, Sobha OneWorld Hoskote, Sobha OneWorld Bangalore location, Sobha OneWorld connectivity, Sobha OneWorld near Whitefield, Sobha OneWorld NH75, Sobha OneWorld airport distance, Sobha OneWorld metro connectivity">
+        content="Sobha One World location, Sobha One World address, Sobha One World Hoskote, Sobha One World Bangalore location, Sobha One World connectivity, Sobha One World near Whitefield, Sobha One World NH75, Sobha One World airport distance, Sobha One World metro connectivity">
 
-    <meta name="author" content="Sobha OneWorld">
+    <meta name="author" content="Sobha One World">
     <meta name="robots" content="index, follow">
 
     <link rel="canonical" href="https://www.sobhaoneworlds.in/location.html">
@@ -25,21 +25,39 @@
     <link rel="icon" type="image/png" href="/images/favicon.ico">
     <link rel="apple-touch-icon" href="/images/favicon.ico">
 
-    <meta property="og:site_name" content="Sobha OneWorld">
+    <meta property="og:site_name" content="Sobha One World">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Sobha OneWorld Location | Address & Connectivity Details">
+    <meta property="og:title" content="Sobha One World Location | Address & Connectivity Details">
     <meta property="og:description"
-        content="Discover Sobha OneWorld location in Hoskote with seamless connectivity to Whitefield, ITPL, airport, metro stations, and major highways in East Bangalore.">
+        content="Discover Sobha One World location in Hoskote with seamless connectivity to Whitefield, ITPL, airport, metro stations, and major highways in East Bangalore.">
     <meta property="og:url" content="https://www.sobhaoneworlds.in/location.html">
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Sobha OneWorld Location | Hoskote Bangalore Connectivity">
+    <meta name="twitter:title" content="Sobha One World Location | Hoskote Bangalore Connectivity">
     <meta name="twitter:description"
-        content="Prime location of Sobha OneWorld in Hoskote with excellent road, metro, rail, and airport connectivity across Bangalore.">
+        content="Prime location of Sobha One World in Hoskote with excellent road, metro, rail, and airport connectivity across Bangalore.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap"
+        rel="stylesheet">
 
     <!-- CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+                        heading: ['Poppins', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
     <link rel="stylesheet" href="/css/style.css">
 
     <!-- Font Awesome -->
@@ -47,6 +65,19 @@
 
     <!-- Custom Styles -->
     <style>
+        body {
+            font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Poppins', 'Inter', sans-serif;
+            letter-spacing: -0.02em;
+        }
+
+        p {
+            line-height: 1.7;
+        }
+
         .text-shadow {
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         }
@@ -78,7 +109,7 @@
                 <img class="w-[40px]" src="./images/logo.webp" alt="Logo">
             </a>
 
-            <ul class="hidden lg:flex items-center text-[15px] font-medium">
+            <ul class="hidden lg:flex items-center gap-1 text-[15px] font-medium">
 
                 <li><a class="nav-not-active" href="/">Home</a></li>
                 <li><a class="nav-not-active" href="/price.html">Price</a></li>
@@ -86,8 +117,9 @@
                 <li><a class="nav-not-active" href="/master-plan.html">Master Plan</a></li>
                 <li><a class="nav-active" href="/location.html">Location</a></li>
                 <li><a class="nav-not-active" href="/amenities.html">Amenities</a></li>
-                <li><a class="nav-not-active" href="#gallery">Gallery</a></li>
-                <li class="nav-not-active" onclick="openModel()" class="cursor-pointer">Brochure</li>
+                <li><a class="nav-not-active" href="/bangalore.html">Bangalore</a></li>
+                <li><a class="nav-not-active" href="/#gallery">Gallery</a></li>
+                <li><a class="nav-not-active cursor-pointer" onclick="openModel()">Brochure</a></li>
 
                 <li class="px-4">
                     <a href="https://wa.me/+918317452005?text=Hi!%20I%27m%20Interested%20In%20Sobha%20One%20World%20Please%20Share%20Details."
@@ -120,8 +152,9 @@
             <li><a href="/master-plan.html" onclick="toggleMenu()">Master Plan</a></li>
             <li><a href="/location.html" onclick="toggleMenu()" class="nav-active w-full">Location</a></li>
             <li><a href="/amenities.html" onclick="toggleMenu()">Amenities</a></li>
-            <li><a href="#gallery" onclick="toggleMenu()">Gallery</a></li>
-            <li onclick="openModel()">Brochure</li>
+            <li><a href="/bangalore.html" onclick="toggleMenu()">Bangalore</a></li>
+            <li><a href="/#gallery" onclick="toggleMenu()">Gallery</a></li>
+            <li><a class="cursor-pointer" onclick="openModel()">Brochure</a></li>
 
             <li>
                 <a href="https://wa.me/+918317452005?text=Hi!%20I%27m%20Interested%20In%20Sobha%20One%20World%20Please%20Share%20Details."
@@ -139,7 +172,7 @@
     <section class="w-full max-w-5xl mx-auto px-4 py-8">
         <div class="mt-6 text-gray-800 leading-relaxed">
 
-            <h1 class="text-2xl font-bold mb-4 text-center">Sobha OneWorld Location</h1>
+            <h1 class="text-2xl font-bold mb-4 text-center">Sobha One World Location</h1>
             <div class="flex justify-center items-center gap-4 mb-4">
                 <button onclick="openModel('Download Brochure')"
                     class="border-2 border-[#ca9c20] flex justify-center items-center gap-2 font-semibold cursor-pointer text-gray-800 px-5 py-2 rounded flex items-center gap-2">
@@ -150,248 +183,645 @@
                     <i class="fas fa-money mt-1"></i> Cost Sheets
                 </button>
             </div>
-            <p class="mb-4">
-                <a href="https://www.sobhaoneworlds.in/"><b>Sobha OneWorld</b></a> enjoys a prime location in Hoskote, positioned along the highly active <b>Old Madras Road
-                (NH-75), directly opposite the Hoskote Toll Plaza in East Bangalore, Karnataka – 562114</b>. This strategic
-                address places the project within one of the fastest-developing corridors of the city. Spread across a
-                massive 300-acre integrated township, with Phase 1 covering 48 acres, the development stands out as a
-                preferred destination for modern homebuyers looking for both convenience and long-term value.
+            <div class="py-8 text-gray-700 leading-relaxed">
+            <p class="mb-6">
+              <a href="https://www.sobhaoneworlds.in/">
+                <b>Sobha One World</b>
+              </a>              is ideally positioned in Hoskote, East Bangalore, right along the
+              prominent <b>Old Madras Road (NH-75)</b> and directly opposite the
+              Hoskote Toll Plaza. This prime address, located in
+              <b>Karnataka – 562114</b>, places the project at the center of one
+              of Bangalore’s fastest-growing residential corridors. Spread
+              across a massive <b>300-acre</b> integrated township (with Phase 1
+              covering 48 acres), the development enjoys excellent connectivity
+              and is rapidly becoming a preferred destination for modern
+              homebuyers.
             </p>
-            <p class="mb-4">
-                One of the biggest advantages of this location is its excellent connectivity to major IT and business
-                hubs in <a href="https://www.sobhaoneworlds.in/east-bangalore.html"><b>East Bangalore</b></a>. Key employment zones such as Whitefield (approximately 11 km), ITPL (around 15
-                km), Bagmane Tech Park (17 km), Laptech IT Services (10 km), and RMZ Ecospace (18 km) are easily
-                accessible from the project. This makes it an ideal residential choice for working professionals,
-                especially those in the IT sector, as it significantly reduces daily commute time and helps maintain a
-                better work-life balance.
+            <p class="mb-6">
+              One of the biggest advantages of this location is its seamless
+              access to major IT hubs. Key employment zones such as              <b>
+                Whitefield (approx. 11 km), ITPL (around 15 km), Bagmane Tech
+                Park (17 km), RMZ Ecospace (18 km)
+              </b>
+              , and nearby tech offices like Laptech IT Services (10 km) are all
+              within comfortable driving distance. This connectivity makes Sobha
+              One World especially attractive for IT professionals looking to
+              reduce commute time and maintain a better work-life balance.
             </p>
-            <p class="mb-4">
-                Hoskote has rapidly evolved into a promising real estate destination due to continuous infrastructure
-                growth and increasing demand. The area is gaining attention for its future potential, supported by major
-                developments like the Satellite Town Ring Road (STRR) and the Bangalore–Chennai Expressway (NE7). These
-                infrastructure projects are expected to improve connectivity further and boost property appreciation
-                over time.
-            </p>
-            <p class="mb-4">
-                Unlike the crowded core areas of <a href="https://en.wikipedia.org/wiki/Bengaluru" target="_blank" rel="noopener noreferrer"><b>Bangalore</b></a>, Hoskote offers a more open and peaceful environment. The
-                locality features wider roads, less congestion, and cleaner surroundings, making it attractive for
-                families seeking a calm yet well-connected lifestyle. This balance between urban access and suburban
-                comfort is one of the key reasons why more buyers are choosing this region over densely populated city
-                zones.
-            </p>
-            <h2 class="text-2xl font-bold mb-2">
-                Sobha OneWorld Address
+            <h2 class="text-2xl font-bold mb-4">
+              Why Location Matters in Real Estate
             </h2>
-            <div>
-                    <div onclick="openModel()" class='cursor-pointer w-full'>
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31091.814875024134!2d77.79682104999999!3d13.068936599999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae0578b64bda1b%3A0x1724b6485a5f2f88!2sHoskote%2C%20Karnataka%20562114!5e0!3m2!1sen!2sin!4v1775889106778!5m2!1sen!2sin"
-                            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        <h3 class='text-center text-lg bg-gold-gradient text-white p-2'>Know More About
-                            Location
-                        </h3>
-                    </div>
-                    <div class="text-gray-700 flex justify-between items-start mt-4">
-                        <div>
-                            <h2 class="text-2xl font-semibold mb-4">
-                                Project Address
-                            </h2>
 
-                            <p class="leading-7">
-                                <strong>Sobha OneWorld</strong><br />
-                                Sarakariguttahalli Village, Hoskote,
-                                Bengaluru Rural District,
-                                East Bangalore, Karnataka-562114.
-                            </p>
-                        </div>
-
-                        <div>
-                            <h3 class="text-2xl font-semibold mb-4">
-                                Landmark and Map Details
-                            </h3>
-
-                            <div class="space-y-2">
-                                <p><strong>Landmark:</strong> Opposite Hoskote Toll Plaza</p>
-                                <p><strong>Coordinates:</strong> 13.0669° N, 77.7983° E</p>
-                                <p><strong>Google Plus Code:</strong> 3Q4F+V9, Bengaluru, Karnataka 562114</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            <p class="mb-4">
-                Sobha OneWorld is strategically situated at Raghuvanahalli–Hoskote Road, KHB Layout, close to the
-                Hoskote Toll Gate in Hoskuru, Hoskote, Bengaluru, Karnataka 560049. This well-connected address ensures
-                excellent visibility and smooth accessibility from all major parts of East Bangalore. Being located in
-                one of the fast-developing residential corridors of the city, the project enjoys strong positioning due
-                to its proximity to key infrastructure and employment hubs.
-            </p>
-            <p class="mb-4">
-                The location is easy to identify and reach, thanks to prominent landmarks such as the Hoskote Toll
-                Plaza, Orion Uptown Mall, and the STRR–NH75 junction. These nearby reference points make daily
-                navigation simple for residents, visitors, and delivery services. For homebuyers searching for premium
-                apartments near reputed institutions like VIBGYOR High School or gated communities close to the
-                Aerospace SEZ, this address stands out as a top choice in 2026.
+            <p class="mb-6">
+              The location of a property plays a crucial role in determining its
+              long-term value, convenience, and demand. Homes situated close to
+              essential facilities such as workplaces, schools, hospitals,
+              shopping centers, and public transport tend to appreciate faster
+              and attract more buyers.
             </p>
 
-            <div class="space-y-6 mt-5">
+            <p class="mb-6">
+              In Bangalore, <b>Hoskote in East Bangalore</b> is emerging as a
+              highly promising residential destination. The area offers a
+              perfect mix of strong road connectivity, improving infrastructure,
+              and relatively affordable property prices compared to central city
+              zones. This makes it an ideal choice for both homebuyers and real
+              estate investors looking for future growth potential.
+            </p>
 
-                <div>
-                    <h2 class="text-2xl font-bold mb-2">Sobha OneWorld Connectivity</h2>
-                    <p class="text-gray-700">
-                        Sobha OneWorld enjoys strong connectivity, making daily travel convenient and hassle-free for
-                        residents. The project is well-linked through a network of important highways and state roads
-                        such as SH 35, NH 75, SH 82, and SH 95. These major routes ensure smooth access to different
-                        parts of Bangalore. In addition to road connectivity, residents can easily rely on public
-                        transport options like BMTC buses, metro services, and app-based cabs for everyday commuting.
-                        Key locations such as the airport, railway stations, and bus terminals are easily accessible,
-                        adding to the overall convenience of living here.
-                    </p>
-                </div>
+            <h2 class="text-2xl font-bold mb-4">
+              Sobha One World Address – Prime Location in Hoskote
+            </h2>
+            <div class="rounded-xl overflow-hidden border border-gray-200 shadow-sm mb-8">
+              <div class="w-full h-[380px] md:h-[460px]">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31091.814875024134!2d77.79682104999999!3d13.068936599999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae0578b64bda1b%3A0x1724b6485a5f2f88!2sHoskote%2C%20Karnataka%20562114!5e0!3m2!1sen!2sin!4v1776447698006!5m2!1sen!2sin"
+                  width="100%"
+                  height="100%"
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Sobha One World location map — Bellandur, Bangalore"
+                  aria-label="Google Maps showing Sobha One World location in Bellandur, Bangalore"
+                ></iframe>
+              </div>
 
-                <div>
-                    <h3 class="text-xl font-semibold mb-2">Air Connectivity</h3>
-                    <p class="text-gray-700">
-                        Traveling to and from the airport is simple and time-efficient for residents of Sobha OneWorld.
-                        The project is connected to Kempegowda International Airport through NH 75 and well-developed
-                        ring roads, allowing a smooth drive without major congestion during off-peak hours. This makes
-                        it ideal for frequent flyers and working professionals.
-                    </p>
-
-                    <ul class="list-disc pl-6 mt-2 text-gray-700 space-y-1">
-                        <li>Kempegowda International Airport – 39 km</li>
-                        <li>Approximate travel time: Around 45 minutes</li>
-                    </ul>
-                </div>
-
-                <div>
-                    <h3 class="text-xl font-semibold mb-2">Metro Connectivity</h3>
-                    <p class="text-gray-700">
-                        The presence of the metro network further enhances connectivity from the project. The Purple
-                        Line Metro provides a fast and reliable way to travel across Bangalore while avoiding road
-                        traffic. The nearest metro station is Kadugodi, which connects directly to important city areas
-                        including Whitefield, KR Puram, and central Bangalore.
-                    </p>
-
-                    <ul class="list-disc pl-6 mt-2 text-gray-700 space-y-1">
-                        <li>Kadugodi Metro Station – 11.9 km</li>
-                        <li>Approximate travel time: Around 15–20 minutes</li>
-                    </ul>
-                </div>
-
-                <div>
-                    <h3 class="text-xl font-semibold mb-2">Railway Connectivity</h3>
-                    <p class="text-gray-700">
-                        Sobha OneWorld also benefits from proximity to key railway stations, making long-distance
-                        travel easy. Whitefield Railway Station is the closest railhead and offers regular train
-                        connectivity to various parts of the city and beyond. This is especially helpful for daily
-                        commuters and intercity travelers.
-                    </p>
-
-                    <ul class="list-disc pl-6 mt-2 text-gray-700 space-y-1">
-                        <li>Whitefield Railway Station – 10.5 km</li>
-                        <li>Approximate travel time: Around 15–20 minutes</li>
-                    </ul>
-                </div>
-
-                <div>
-                    <h3 class="text-xl font-semibold mb-2">Road Connectivity</h3>
-                    <p class="text-gray-700">
-                        The project has excellent road connectivity, ensuring smooth travel within Bangalore. It is
-                        directly connected to major highways, making daily commuting faster and more efficient. A bus
-                        stop is located very close to the project, and BMTC buses frequently operate from this area,
-                        providing affordable and reliable public transport options.
-                    </p>
-
-                    <ul class="list-disc pl-6 mt-2 text-gray-700 space-y-1">
-                        <li>Hoskote Bus Stop – 1.1 km</li>
-                    </ul>
-                </div>
-
-                <div>
-                    <p class="text-gray-700">
-                        Overall, Sobha OneWorld offers a well-balanced connectivity advantage with access to road,
-                        metro, rail, and air transport, making it an ideal choice for both working professionals and
-                        families seeking convenience and accessibility.
-                    </p>
-                </div>
-
+              <Link
+                href="https://maps.app.goo.gl/Eoijt8RcFfXcMQHR9"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Know more about Sobha One World location in Bellandur Bangalore"
+                class="block w-full bg-primary hover:bg-blue-800 text-white text-center font-semibold text-lg py-4 transition-colors duration-200"
+              >
+                Know More About Location
+              </Link>
             </div>
-            <div class="space-y-6 mt-5">
 
-                <div>
-                    <h2 class="text-2xl font-bold mb-2">Places to Visit Near Sobha OneWorld</h2>
-                    <p class="text-gray-700">
-                        Sobha OneWorld is surrounded by several popular attractions and leisure destinations, offering
-                        residents plenty of options for relaxation, outings, and weekend activities. From natural
-                        landscapes to cultural landmarks, the area provides a good mix of experiences for families and
-                        individuals.
-                    </p>
+            <div class="text-gray-800 flex justify-between py-4">
+              <div>
+                <h2 class="text-2xl font-semibold mb-4">Project Address</h2>
+
+                <p class="leading-7">
+                  <strong>Sobha One World</strong>
+                  <br />
+                  Sarakariguttahalli Village, Hoskote, <br /> Bengaluru Rural
+                  District,
+                  <br />
+                  East Bangalore, Karnataka-562114.
+                </p>
+              </div>
+
+              <div>
+                <h3 class="text-2xl font-semibold mb-4">
+                  Landmark and Map Details
+                </h3>
+
+                <div class="space-y-2">
+                  <p>
+                    <strong>Landmark:</strong> Opposite Hoskote Toll Plaza
+                  </p>
+                  <p>
+                    <strong>Coordinates:</strong> 13.0669° N, 77.7983° E
+                  </p>
+                  <p>
+                    <strong>Google Plus Code:</strong> 3Q4F+V9, Bengaluru,
+                    Karnataka 562114
+                  </p>
                 </div>
-
-                <div>
-                    <h3 class="text-xl font-semibold mb-2">Nearby Attractions and Distances:</h3>
-                    <ul class="list-disc pl-6 text-gray-700 space-y-1">
-                        <li>Hoskote Lake – 4 km</li>
-                        <li>Bamboo Forest, Tavarekere – 9 km</li>
-                        <li>Ancient Someshwara Temple – 8 km</li>
-                        <li>Nandi Hills – 47 km</li>
-                        <li>Lalbagh Botanical Garden – 28 km</li>
-                        <li>Bangalore Palace – 28 km</li>
-                        <li>Cubbon Park – 29 km</li>
-                        <li>Government Museum Bangalore – 30 km</li>
-                        <li>Bannerghatta National Park – 56 km</li>
-                    </ul>
-                    <p class="text-gray-700 mt-3">
-                        These destinations offer a combination of nature, history, and recreation, making it easy for
-                        residents to enjoy both peaceful getaways and city-based attractions.
-                    </p>
-                </div>
-
-                <div>
-                    <h3 class="text-xl font-semibold mb-2">Nearby Lifestyle & IT Hubs</h3>
-                    <p class="text-gray-700">
-                        In addition to tourist attractions, the project is also close to key lifestyle destinations and
-                        employment zones, enhancing everyday convenience and long-term value.
-                    </p>
-                    <ul class="list-disc pl-6 mt-2 text-gray-700 space-y-1">
-                        <li>Orion Uptown Mall – 5.8 km</li>
-                        <li>Phoenix Marketcity – 18 km</li>
-                        <li>Brigade Tech Park – 15 km</li>
-                        <li>Sigma Soft Tech Park – 17.4 km</li>
-                        <li>KIADB Aerospace Park – 31.8 km</li>
-                    </ul>
-                    <p class="text-gray-700 mt-3">
-                        These nearby hubs provide access to shopping, entertainment, dining, and employment
-                        opportunities, making the location ideal for both professionals and families.
-                    </p>
-                </div>
-
-                <div>
-                    <h3 class="text-xl font-semibold mb-2">About Hoskote</h3>
-                    <img src="./images/hoskote.webp" class="w-full mb-5" loading="lazy"
-                    alt="Hoskote">
-                    <p class="text-gray-700">
-                        <a href="https://www.sobhaoneworlds.in/hoskote.html"><b>Hoskote</b></a> has emerged as one of the fastest-growing residential zones in East Bangalore. Over the
-                        past few years, it has gained strong attention from homebuyers and investors due to its
-                        strategic location and improving infrastructure. The area is well-connected to major parts of
-                        the city through highways and arterial roads, making commuting easier and more efficient.
-                    </p>
-                    <p class="text-gray-700 mt-2">
-                        Unlike the crowded central parts of Bangalore, Hoskote offers a more open and peaceful
-                        environment. The locality experiences lower noise levels, better air quality, and wider roads,
-                        which contribute to a more comfortable living experience. This balance between connectivity and
-                        calm surroundings is one of the main reasons behind its growing popularity.
-                    </p>
-                    <p class="text-gray-700 mt-2">
-                        Real estate in Hoskote is witnessing steady growth, supported by its proximity to major IT hubs
-                        such as Whitefield, ITPL, and the expanding Aerospace SEZ corridor. As infrastructure continues
-                        to develop, property values in the area are expected to rise, making it a promising destination
-                        for long-term investment as well as end-use living.
-                    </p>
-                </div>
-
+              </div>
             </div>
+
+            <p class="mb-6">
+              <b>Sobha One World</b> is strategically located in
+              Sarakariguttahalli, Hoskote, Bangalore, Karnataka – 562114.
+              Positioned in the rapidly developing East Bangalore corridor, the
+              project enjoys proximity to key social infrastructure such as
+              reputed schools, hospitals, retail outlets, and daily convenience
+              stores.
+            </p>
+
+            <p class="mb-6">
+              This well-connected address ensures residents experience a
+              comfortable and convenient lifestyle, with everything they need
+              located within easy reach.
+            </p>
+
+            <h2 class="text-2xl font-bold mb-4">
+              Sobha One World Connectivity Overview
+            </h2>
+
+            <p class="mb-4">
+              One of the strongest advantages of <b>Sobha One World</b> is its
+              excellent connectivity to major parts of Bangalore. The project is
+              well-linked through prominent highways and state roads, including:
+            </p>
+
+            <ul class="list-disc ml-6 mb-6">
+              <li>NH 75 (Old Madras Road)</li>
+              <li>State Highway 35 (SH 35)</li>
+              <li>SH 82 and SH 95</li>
+            </ul>
+
+            <p class="mb-6">
+              Residents can easily commute using BMTC buses, metro services, and
+              app-based cabs, ensuring smooth travel across the city. Key
+              transport hubs such as the airport, railway stations, and bus
+              terminals are all accessible without difficulty.
+            </p>
+
+            <h2 class="text-2xl font-bold mb-4">
+              Air Connectivity – Easy Access to the Airport
+            </h2>
+            <Image
+              src="/images/air-connectivity.webp"
+              alt="Air Connectivity"
+              class="w-full h-auto mb-6"
+              priority
+              width={800}
+              height={500}
+            />
+
+            <p class="mb-4">
+              Sobha One World offers convenient access to Kempegowda
+              International Airport via NH 75 and connecting ring roads. The
+              travel time is approximately 45 minutes, making it suitable for
+              frequent travelers and professionals.
+            </p>
+
+            <ul class="list-disc ml-6 mb-6">
+              <li>Kempegowda International Airport – 39 km</li>
+            </ul>
+
+            <h2 class="text-2xl font-bold mb-4">
+              Metro Connectivity – Seamless City Travel
+            </h2>
+
+            <Image
+              src="/images/metro-connectivity.webp"
+              alt="Metro Connectivity"
+              class="w-full h-auto mb-6"
+              priority
+              width={800}
+              height={500}
+            />
+
+            <p class="mb-4">
+              The nearby Purple Line Metro enhances daily commuting by reducing
+              travel time and avoiding road traffic congestion. The closest
+              metro station is:
+            </p>
+
+            <ul class="list-disc ml-6 mb-6">
+              <li>
+                Kadugodi Metro Station – approx. 11.9 km (around 15–20 minutes
+                drive)
+              </li>
+            </ul>
+
+            <p class="mb-6">
+              This connection allows residents to travel efficiently to major
+              areas like Whitefield, KR Puram, and central Bangalore.
+            </p>
+
+            <h2 class="text-2xl font-bold mb-4">
+              Railway Connectivity – Convenient Train Access
+            </h2>
+
+            <Image
+              src="/images/railway-connectivity.webp"
+              alt="Railway Connectivity"
+              class="w-full h-auto mb-6"
+              priority
+              width={800}
+              height={500}
+            />
+
+            <p class="mb-4">
+              For those who rely on rail transport, Sobha One World is well
+              connected to nearby railway stations. The closest option is:
+            </p>
+
+            <ul class="list-disc ml-6 mb-6">
+              <li>
+                Whitefield Railway Station – approx. 10.5 km (around 15–20
+                minutes)
+              </li>
+            </ul>
+
+            <p class="mb-6">
+              This makes intercity and daily train travel easy and accessible
+              for residents.
+            </p>
+
+            <h2 class="text-2xl font-bold mb-4">
+              Road Connectivity – Smooth Travel Across Bangalore
+            </h2>
+
+            <Image
+              src="/images/road-connectivity.webp"
+              alt="Road Connectivity"
+              class="w-full h-auto mb-6"
+              priority
+              width={800}
+              height={500}
+            />
+
+            <p class="mb-4">
+              Sobha One World enjoys strong road connectivity through a network
+              of highways and internal roads. Daily commuting is further
+              simplified with public transport availability.
+            </p>
+
+            <ul class="list-disc ml-6">
+              <li>Hoskote Bus Stop – approx. 1.1 km</li>
+            </ul>
+
+            <p class="mt-4">
+              BMTC buses frequently operate in this area, providing direct
+              access to different parts of Bangalore. The presence of wide roads
+              and reduced congestion ensures a smooth and hassle-free driving
+              experience.
+            </p>
+          </div>
+          <div class="pb-6 text-gray-700 leading-relaxed">
+            <h2 class="text-2xl font-bold mb-4">
+              Top Places to Visit Near Sobha One World, Hoskote
+            </h2>
+
+            <p class="mb-6">
+              Living at Sobha One World in Hoskote not only offers a premium
+              residential lifestyle but also places you close to some of
+              Bangalore’s most popular attractions. From lush gardens and
+              historic landmarks to modern shopping destinations and educational
+              museums, there are plenty of options for weekend outings, family
+              trips, and relaxation.
+            </p>
+
+            <h3 class="text-xl font-semibold mb-2">
+              1. Lalbagh Botanical Garden – 28.2 km
+            </h3>
+
+            <p class="mb-4">
+              Lalbagh Botanical Garden is one of Bangalore’s most iconic green
+              spaces, known for its vast collection of rare plants, vibrant
+              flowers, and centuries-old trees. Established during the 18th
+              century, this garden spreads across a large area and offers scenic
+              walking paths, serene lakes, and beautifully maintained
+              landscapes.
+            </p>
+
+            <p class="mb-4">
+              One of its main highlights is the grand flower show held twice a
+              year, attracting thousands of visitors. Whether you enjoy nature
+              walks or photography, Lalbagh is a peaceful retreat from the
+              city’s hustle.
+            </p>
+
+            <ul class="list-disc ml-6 mb-6">
+              <li>Timings: 6:15 AM to 7:00 PM</li>
+              <li>Entry Fee: ₹50 (Adults), ₹20 (Children)</li>
+            </ul>
+
+            <h3 class="text-xl font-semibold mb-2">
+              2. Bangalore Palace – 27.1 km
+            </h3>
+
+            <p class="mb-4">
+              Bangalore Palace is a stunning architectural landmark that
+              reflects royal elegance and historical charm. Built in the late
+              19th century, the palace showcases Tudor-style architecture
+              inspired by European castles.
+            </p>
+
+            <p class="mb-4">
+              With its majestic towers, wooden interiors, vintage furniture, and
+              royal artifacts, the palace offers visitors a glimpse into
+              Bangalore’s regal past. It’s an excellent place for history lovers
+              and tourists interested in heritage sites.
+            </p>
+
+            <ul class="list-disc ml-6 mb-6">
+              <li>
+                Entry Fee: ₹230 (Indian Citizens), ₹460 (Foreign Visitors)
+              </li>
+            </ul>
+
+            <h3 class="text-xl font-semibold mb-2">
+              3. Cubbon Park – 21.3 km
+            </h3>
+
+            <p class="mb-4">
+              Located in the heart of Bangalore, Cubbon Park is a vast green
+              oasis ideal for relaxation and outdoor activities. The park is
+              filled with lush greenery, shaded pathways, and open lawns, making
+              it perfect for morning walks, jogging, or spending quality time
+              with family.
+            </p>
+
+            <p class="mb-4">
+              In addition to its natural beauty, Cubbon Park houses several
+              attractions such as a children’s play area, toy train, museums,
+              and a public library. It’s a favorite spot for both locals and
+              tourists looking to unwind.
+            </p>
+
+            <ul class="list-disc ml-6 mb-6">
+              <li>Timings: 6:15 AM to 6:00 PM</li>
+            </ul>
+
+            <h3 class="text-xl font-semibold mb-2">
+              4. Phoenix Marketcity – 15.2 km
+            </h3>
+
+            <p class="mb-4">
+              Phoenix Marketcity is one of the largest and most popular shopping
+              malls near Sobha One World. It offers a complete lifestyle
+              experience with a wide range of retail stores, restaurants, cafes,
+              and entertainment options.
+            </p>
+
+            <p class="mb-4">
+              From international brands and fashion outlets to multiplex cinemas
+              and food courts, this mall is a perfect destination for shopping,
+              dining, and weekend entertainment with friends and family.
+            </p>
+
+            <h3 class="text-xl font-semibold mb-2">
+              5. HAL Heritage Centre & Aerospace Museum – 23.9 km
+            </h3>
+
+            <p class="mb-4">
+              The HAL Heritage Centre & Aerospace Museum is a fascinating
+              destination, especially for those interested in aviation and
+              technology. It features real aircraft, fighter jets, helicopter
+              models, and interactive exhibits that explain the science behind
+              aviation.
+            </p>
+
+            <p class="mb-4">
+              This museum is both educational and entertaining, making it a
+              great place for children, students, and enthusiasts who want to
+              explore the world of aerospace.
+            </p>
+
+            <ul class="list-disc ml-6 mb-6">
+              <li>Entry Fee: ₹70 (Adults), ₹30 (Children)</li>
+            </ul>
+
+            <h2 class="text-2xl font-bold mb-4">
+              Why These Locations Add Value to Sobha One World
+            </h2>
+
+            <p class="mb-4">
+              The presence of such diverse attractions near Sobha One World
+              significantly enhances the overall living experience. Residents
+              can enjoy:
+            </p>
+
+            <ul class="list-disc ml-6 mb-4">
+              <li>Easy access to green spaces and parks for relaxation</li>
+              <li>Educational outings for children and families</li>
+              <li>Premium shopping and entertainment hubs nearby</li>
+              <li>Cultural and historical landmarks within reach</li>
+            </ul>
+
+            <p>
+              This combination of convenience, lifestyle, and connectivity makes
+              Sobha One World an ideal choice for modern homebuyers looking for
+              both comfort and accessibility in East Bangalore.
+            </p>
+          </div>
+          <div class="pb-6 text-gray-700 leading-relaxed">
+            <h2 class="text-2xl font-bold mb-4">
+              About Hoskote – A Rapidly Growing Residential Hub in East
+              Bangalore
+            </h2>
+
+            <Image
+              src="/images/hoskote.webp"
+              alt="Hoskote"
+              class="w-full h-auto mb-6"
+              priority
+              width={800}
+              height={500}
+            />
+
+            <p class="mb-4">
+              <a href="https://en.wikipedia.org/wiki/Hoskote" rel="nofollow" target="_blank"><b>Hoskote</b></a>, located in the eastern corridor of Bangalore, is quickly
+              emerging as one of the most promising residential destinations in
+              the city. Often referred to as the “next Whitefield,” this area
+              has been witnessing rapid infrastructure development, including
+              new residential townships, commercial spaces, and improved road
+              networks.
+            </p>
+
+            <p class="mb-6">
+              What makes Hoskote particularly attractive is its balance between
+              affordability and future growth potential. Property prices here
+              are still comparatively lower than established areas like
+              Whitefield and Marathahalli, making it an excellent opportunity
+              for both homebuyers and investors. With continuous development and
+              increasing demand, real estate values in Hoskote are expected to
+              appreciate significantly in the coming years.
+            </p>
+
+            <h3 class="text-xl font-semibold mb-2">
+              Connectivity Advantages of Hoskote
+            </h3>
+
+            <p class="mb-6">
+              One of the biggest strengths of Hoskote is its excellent
+              connectivity to major parts of Bangalore. The region benefits from
+              well-planned, wide roads that ensure smooth traffic movement,
+              making daily commuting convenient for residents.
+            </p>
+
+            <p class="mb-6">
+              Upcoming infrastructure projects such as the Satellite Town Ring
+              Road (STRR) are set to further enhance connectivity, especially by
+              reducing travel time to Kempegowda International Airport and other
+              key locations. In addition, access to metro lines and nearby
+              railway stations makes Hoskote a well-connected suburb for both
+              work and travel.
+            </p>
+
+            <h3 class="text-xl font-semibold mb-2">
+              Road Connectivity in Hoskote
+            </h3>
+
+            <p class="mb-4">
+              Hoskote enjoys seamless connectivity through a network of major
+              highways and state roads, making it easy to travel within and
+              beyond Bangalore:
+            </p>
+
+            <ul class="list-disc ml-6 mb-6">
+              <li>
+                State Highway 35 (SH 35) runs directly through Hoskote,
+                connecting it to Whitefield and Sarjapur
+              </li>
+              <li>
+                State Highway 82 (SH 82) links Hoskote to Chintamani and nearby
+                towns
+              </li>
+              <li>
+                State Highway 95 (SH 95) provides access to Malur and
+                surrounding areas
+              </li>
+              <li>
+                The Bangalore–Chennai Expressway (NE7) begins close to Hoskote,
+                boosting long-distance connectivity
+              </li>
+              <li>
+                National Highway 75 (NH 75 / Old Madras Road) is a major route
+                passing through the area
+              </li>
+              <li>
+                The upcoming Satellite Town Ring Road (STRR) will connect
+                Hoskote to North Bangalore and other peripheral regions
+              </li>
+            </ul>
+
+            <h3 class="text-xl font-semibold mb-2">
+              Metro Connectivity in Hoskote
+            </h3>
+
+            <p class="mb-6">
+              Hoskote is currently connected to Bangalore’s metro network via
+              the Purple Line, which allows residents to travel across the city
+              while avoiding traffic congestion. The nearest operational metro
+              stations are located in the Whitefield area.
+            </p>
+
+            <p class="mb-6">
+              Additionally, a proposed metro extension from KR Puram to Hoskote
+              is expected to significantly improve connectivity in the near
+              future, making public transport even more convenient for daily
+              commuters.
+            </p>
+
+            <h3 class="text-xl font-semibold mb-2">
+              Airport Connectivity from Hoskote
+            </h3>
+
+            <p class="mb-6">
+              Kempegowda International Airport is easily accessible from Hoskote
+              via NH 648 and other connecting roads. The travel time is
+              relatively short compared to many other parts of the city.
+            </p>
+
+            <p class="mb-6">
+              Regular BMTC airport bus services operate in this region, offering
+              a reliable and affordable mode of transport for frequent
+              travelers.
+            </p>
+
+            <h3 class="text-xl font-semibold mb-2">
+              Educational Institutions Near Sobha One World
+            </h3>
+
+            <p class="mb-4">
+              Hoskote offers access to several reputed schools, making it a
+              suitable location for families with children:
+            </p>
+
+            <ul class="list-disc ml-6 mb-6">
+              <li>OM Shree Public School – 350 meters</li>
+              <li>Uzma English School – 350 meters</li>
+              <li>Sri Vivekananda Vidya Kendra – 850 meters</li>
+              <li>Sri Gnana Gangothri School – 4.1 km</li>
+              <li>Montreal English School – 3.1 km</li>
+              <li>Capstone High School – 4.9 km</li>
+              <li>Citizens’ English School – 5.4 km</li>
+            </ul>
+
+            <h3 class="text-xl font-semibold mb-2">
+              IT Hubs Near Sobha One World
+            </h3>
+
+            <p class="mb-4">
+              For working professionals, especially in the IT sector, Hoskote
+              offers convenient access to major tech parks and employment zones:
+            </p>
+
+            <ul class="list-disc ml-6 mb-6">
+              <li>ITPL (International Tech Park Bangalore) – 12.4 km</li>
+              <li>EPIP Zone, Whitefield – 17.5 km</li>
+              <li>Bagmane Tech Park – 18.9 km</li>
+              <li>Embassy TechVillage – 20.5 km</li>
+              <li>RMZ Ecospace – 22.3 km</li>
+              <li>Laptech IT Services – 12.2 km</li>
+            </ul>
+
+            <h3 class="text-xl font-semibold mb-2">
+              Healthcare Facilities Near Sobha One World
+            </h3>
+
+            <p class="mb-4">
+              Residents have access to several well-equipped hospitals and
+              healthcare centers nearby:
+            </p>
+
+            <ul class="list-disc ml-6 mb-6">
+              <li>Ashwini Hospital – 1.9 km</li>
+              <li>Shivapriya Maternity Home – 1.8 km</li>
+              <li>Taluk Government Hospital, Hoskote – 2.2 km</li>
+              <li>Marthoma Mission Hospital – 2.2 km</li>
+              <li>MVJ Medical College & Research Hospital – 5.1 km</li>
+              <li>Sri Narayana Eye Care Hospital – 5.5 km</li>
+            </ul>
+
+            <h3 class="text-xl font-semibold mb-2">
+              Shopping and Entertainment Near Sobha One World
+            </h3>
+
+            <p class="mb-4">
+              Hoskote residents can enjoy a variety of shopping and
+              entertainment options within a short drive:
+            </p>
+
+            <ul class="list-disc ml-6 mb-6">
+              <li>Phoenix Marketcity – 16.2 km</li>
+              <li>Park Square Mall – 13.4 km</li>
+              <li>VR Bengaluru – 17.3 km</li>
+              <li>Nexus Whitefield – 15.3 km</li>
+              <li>Dress Circle Mall – 13.5 km</li>
+            </ul>
+
+            <h3 class="text-xl font-semibold mb-2">
+              Key Distances from Sobha One World
+            </h3>
+
+            <p class="mb-4">
+              Sobha One World enjoys a strategic location with easy access to
+              important areas in Bangalore:
+            </p>
+
+            <ul class="list-disc ml-6 mb-6">
+              <li>Whitefield – 11.6 km</li>
+              <li>Varthur – 19.5 km</li>
+              <li>Marathahalli – 20.6 km</li>
+            </ul>
+
+            <h3 class="text-xl font-semibold mb-2">
+              Why Hoskote is a Smart Investment Choice
+            </h3>
+
+            <p>
+              Hoskote is steadily transforming into a modern residential hotspot
+              with strong infrastructure growth, excellent connectivity, and
+              increasing demand. Its affordability compared to central Bangalore
+              locations, combined with proximity to IT hubs and upcoming
+              projects, makes it an ideal destination for both end-users and
+              investors.
+            </p>
+
+            <p class="mt-4">
+              With planned developments and rising real estate value, investing
+              in Hoskote today offers the potential for significant long-term
+              returns while ensuring a comfortable lifestyle.
+            </p>
+          </div>
 
             <div class="space-y-6 mt-5">
 
@@ -399,10 +829,10 @@
 
                 <div>
                     <h3 class="text-xl font-semibold mb-2">
-                        1. Where is Sobha OneWorld located?
+                        1. Where is Sobha One World located?
                     </h3>
                     <p class="text-gray-700">
-                        Sobha OneWorld is situated in Hoskote, East Bangalore, near Old Madras Road (NH-75). The
+                        Sobha One World is situated in Hoskote, East Bangalore, near Old Madras Road (NH-75). The
                         project is surrounded by rapidly developing residential communities and key business zones,
                         making it a well-positioned location in the city.
                     </p>
@@ -422,7 +852,7 @@
 
                 <div>
                     <h3 class="text-xl font-semibold mb-2">
-                        3. Does Sobha OneWorld have good connectivity?
+                        3. Does Sobha One World have good connectivity?
                     </h3>
                     <p class="text-gray-700">
                         Yes, the project is well connected to different parts of Bangalore through major highways,
@@ -436,7 +866,7 @@
                         4. How far is Kempegowda International Airport from the project?
                     </h3>
                     <p class="text-gray-700">
-                        Kempegowda International Airport is easily accessible from Sobha OneWorld via major highways.
+                        Kempegowda International Airport is easily accessible from Sobha One World via major highways.
                         Residents can also use BMTC airport shuttle services, making travel to the airport convenient
                         and reliable.
                     </p>
@@ -444,7 +874,7 @@
 
                 <div>
                     <h3 class="text-xl font-semibold mb-2">
-                        5. Is Sobha OneWorld a good investment for the future?
+                        5. Is Sobha One World a good investment for the future?
                     </h3>
                     <p class="text-gray-700">
                         Yes, the location is experiencing rapid growth with upcoming infrastructure developments such as
@@ -460,11 +890,106 @@
 
     </section>
 
-    <footer>
-        <div class='bg-white p-4 mt-4 flex flex-col gap-3 relative border border-gray-200'>
-            <div class=' lg:px-6'>
-                <p class=' text-xs'>
-                    <span class=' font-medium'>Disclaimer</span> : Please be advised that this website is not an
+    <section id="blogs" class="p-4">
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center mb-6">
+                <h2 id="gallery-heading" class="text-xl md:text-2xl font-bold text-gray-900 text-center mb-2">
+                    Sobha One World Blogs
+                </h2>
+                <div class="w-full h-px bg-gray-200 mb-10" />
+            </div>
+            <div id="blogGrid" class="bg-white grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <p class="text-center text-gray-500 col-span-full">Loading blogs...</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-gray-300 mt-10">
+        <div class="max-w-6xl mx-auto px-4 py-12 grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
+
+            <div>
+                <a href="/"><img class="w-[120px] mb-4 bg-white rounded p-1" src="./images/logo.webp" alt="Sobha One World Logo"></a>
+                <p class="text-sm text-gray-400 leading-relaxed mb-4">
+                    Sobha One World is a premium 300-acre township by Sobha Limited in Hoskote, East Bangalore, offering
+                    luxury 1, 2, 3 & 4 BHK apartments.
+                </p>
+                <div class="flex gap-3">
+                    <a href="#" aria-label="Facebook"
+                        class="w-9 h-9 flex items-center justify-center rounded-full bg-white/10 hover:bg-primary hover:text-white transition">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="#" aria-label="Instagram"
+                        class="w-9 h-9 flex items-center justify-center rounded-full bg-white/10 hover:bg-primary hover:text-white transition">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="#" aria-label="YouTube"
+                        class="w-9 h-9 flex items-center justify-center rounded-full bg-white/10 hover:bg-primary hover:text-white transition">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                    <a href="#" aria-label="LinkedIn"
+                        class="w-9 h-9 flex items-center justify-center rounded-full bg-white/10 hover:bg-primary hover:text-white transition">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" aria-label="Twitter / X"
+                        class="w-9 h-9 flex items-center justify-center rounded-full bg-white/10 hover:bg-primary hover:text-white transition">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div>
+                <h3 class="text-white font-semibold mb-4">Quick Links</h3>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="/" class="hover:text-[#facc15] transition">Home</a></li>
+                    <li><a href="/price.html" class="hover:text-[#facc15] transition">Price</a></li>
+                    <li><a href="/floor-plans.html" class="hover:text-[#facc15] transition">Floor Plan</a></li>
+                    <li><a href="/master-plan.html" class="hover:text-[#facc15] transition">Master Plan</a></li>
+                    <li><a href="/location.html" class="hover:text-[#facc15] transition">Location</a></li>
+                    <li><a href="/amenities.html" class="hover:text-[#facc15] transition">Amenities</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="text-white font-semibold mb-4">Company</h3>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="/about.html" class="hover:text-[#facc15] transition">About Us</a></li>
+                    <li><a href="/contact.html" class="hover:text-[#facc15] transition">Contact Us</a></li>
+                    <li><a href="/privacy-policy.html" class="hover:text-[#facc15] transition">Privacy Policy</a></li>
+                    <li><a href="/disclaimer.html" class="hover:text-[#facc15] transition">Disclaimer</a></li>
+                    <li><a href="/sitemap.xml" class="hover:text-[#facc15] transition">Sitemap</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="text-white font-semibold mb-4">Get in Touch</h3>
+                <ul class="space-y-3 text-sm text-gray-400">
+                    <li class="flex items-start gap-2">
+                        <i class="fa fa-phone-alt mt-1 text-[#facc15]"></i>
+                        <a href="tel:+918317452005" class="hover:text-[#facc15] transition">+91-8317452005</a>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <i class="fa-brands fa-whatsapp mt-1 text-[#facc15]"></i>
+                        <a href="https://wa.me/+918317452005?text=Hi!%20I%27m%20Interested%20In%20Sobha%20One%20World%20Please%20Share%20Details."
+                            class="hover:text-[#facc15] transition">WhatsApp Us</a>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <i class="fa fa-map-marker-alt mt-1 text-[#facc15]"></i>
+                        <span>Sarakariguttahalli Village, Hoskote, Old Madras Road (NH-75), East Bangalore, Karnataka –
+                            562114</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <i class="fa fa-clock mt-1 text-[#facc15]"></i>
+                        <span>10:00 AM – 7:00 PM (Open all days)</span>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="border-t border-white/10">
+            <div class="max-w-6xl mx-auto px-4 py-6">
+                <p class="text-xs text-gray-500 leading-relaxed">
+                    <span class="font-medium text-gray-400">Disclaimer</span> : Please be advised that this website is not an
                     official site and serves solely as an informational portal managed by a RERA authorized real estate
                     agent. It does not constitute an offer or guarantee of any services. The prices displayed on this
                     website are subject to change without prior notice, and the availability of properties cannot be
@@ -480,12 +1005,9 @@
                     website. Thank you for visiting our website.
                 </p>
             </div>
-            <div class=' flex justify-center border-t border-black mt-2 pt-2'>
-                <p class=' text-sm'>Developed and Marketing by <a href="https://www.mndigitalagency.com"
-                        class=" text-blue-500">
-                        M2N Digital Agency
-                    </a>
-                </p>
+            <div class="flex justify-center border-t border-white/10 py-4 text-sm text-gray-400">
+                <p>Developed and Marketing by <a href="https://www.mndigitalagency.com"
+                        class="text-[#facc15] hover:underline">M2N Digital Agency</a></p>
             </div>
         </div>
     </footer>
@@ -567,7 +1089,7 @@
             </div>
         </div>
     </div>
-    <script src="js/global.js"></script>
+    <script src="js/app.js"></script>
     <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -576,15 +1098,15 @@
       "@type": "WebSite",
       "@id": "https://www.sobhaoneworlds.in/#website",
       "url": "https://www.sobhaoneworlds.in/",
-      "name": "Sobha OneWorld"
+      "name": "Sobha One World"
     },
     {
       "@type": "WebPage",
       "@id": "https://www.sobhaoneworlds.in/location/#webpage",
       "url": "https://www.sobhaoneworlds.in/location.html",
-      "name": "Sobha OneWorld Location",
-      "headline": "Sobha OneWorld Location",
-      "description": "Sobha OneWorld is strategically located in Hoskote, East Bangalore near Old Madras Road (NH-75), offering seamless connectivity to Whitefield, STRR, airport, and major IT hubs.",
+      "name": "Sobha One World Location",
+      "headline": "Sobha One World Location",
+      "description": "Sobha One World is strategically located in Hoskote, East Bangalore near Old Madras Road (NH-75), offering seamless connectivity to Whitefield, STRR, airport, and major IT hubs.",
       "inLanguage": "en-IN",
       "isPartOf": {
         "@id": "https://www.sobhaoneworlds.in/#website"
@@ -617,10 +1139,10 @@
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "Where is Sobha OneWorld located?",
+          "name": "Where is Sobha One World located?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Sobha OneWorld is located in Hoskote, East Bangalore, near Old Madras Road (NH-75) with excellent access to major residential and commercial zones."
+            "text": "Sobha One World is located in Hoskote, East Bangalore, near Old Madras Road (NH-75) with excellent access to major residential and commercial zones."
           }
         },
         {
@@ -633,7 +1155,7 @@
         },
         {
           "@type": "Question",
-          "name": "Does Sobha OneWorld have good connectivity?",
+          "name": "Does Sobha One World have good connectivity?",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Yes, the project is well connected through highways, BMTC buses, metro stations, and railway networks, ensuring smooth daily travel."
@@ -641,7 +1163,7 @@
         },
         {
           "@type": "Question",
-          "name": "How far is Kempegowda International Airport from Sobha OneWorld?",
+          "name": "How far is Kempegowda International Airport from Sobha One World?",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Kempegowda International Airport is around 39 km away and can be reached conveniently via NH-75 and peripheral road networks."
@@ -649,7 +1171,7 @@
         },
         {
           "@type": "Question",
-          "name": "Is Sobha OneWorld a good investment for the future?",
+          "name": "Is Sobha One World a good investment for the future?",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Yes, with rapid infrastructure growth like STRR and expressways, Hoskote is expected to see strong property appreciation in the coming years."

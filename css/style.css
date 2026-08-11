@@ -31,15 +31,17 @@
 .nav-active {
   background: linear-gradient(to right, #facc15, #ca8a04);
   color: white;
-  padding: 8px 12px;
-  border-right: 2px solid #e5e7eb;
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: 9999px;
 }
 
 .nav-not-active {
-  /* font-size: 14px; */
-  /* font-weight: 500; */
-  padding: 8px 12px;
-  border-right: 2px solid #e5e7eb;
+  color: #374151;
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: 9999px;
+  transition: all 0.25s ease;
 }
 
 .nav-not-active:hover {
@@ -116,11 +118,9 @@ html {
 
 .pageHeader {
   width: 100%;
-  /* height: 92vh; */
-  /* background-image: url("./images/homebanner.jpg"); */
   background-image:
     linear-gradient(to bottom, rgba(0, 0, 0, 0.42), rgba(0, 0, 0, 0.93)),
-    url("../images/sobha-one-world-banner.webp");
+    url("../images/banner/sobha-one-world.webp");
   /* background-position: center; */
   background-size: cover;
   background-repeat: no-repeat;
