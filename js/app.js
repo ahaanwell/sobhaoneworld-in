@@ -251,7 +251,6 @@ async function loadBlogs() {
                         <img src="${image}" alt="${escapeHtml(blog.title)}" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
                     </div>
                     <div class="p-4">
-                        <p class="text-xs text-gray-500 mb-1">${date}</p>
                         <h3 class="font-semibold text-gray-900 mb-2 line-clamp-2">${escapeHtml(blog.title)}</h3>
                         <p class="text-sm text-gray-600 line-clamp-2">${escapeHtml(blog.metaDescription)}</p>
                         <span class="inline-block mt-3 text-sm font-semibold text-primary">Read More &rarr;</span>

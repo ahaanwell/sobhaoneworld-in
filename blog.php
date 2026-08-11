@@ -127,7 +127,7 @@ $date = format_blog_date($blog['publishedAt'] ?? $blog['createdAt']);
         </ul>
     </div>
 
-    <article class="max-w-3xl mx-auto px-4 py-8">
+    <article class="max-w-4xl mx-auto px-4 py-8">
         <p class="text-sm"><a href="/#blogs" class="text-primary font-semibold">&larr; Back to Blogs</a></p>
 
         <h1 class="text-2xl md:text-4xl font-bold text-gray-900 mt-4 mb-3"><?= $heading ?></h1>
